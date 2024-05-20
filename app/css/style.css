@@ -7,3 +7,10 @@
 body{
     font-size: 18px;
 }
+:root{
+    --primary-cyan:#3081ED;
+    --primary-pink:#9B51E0;
+
+    --gradient:linear-gradient(94.78deg, var(--primary-pink) 0%, var(--primary-cyan) 100%);
+    --background:#1F1D2B;
+}
