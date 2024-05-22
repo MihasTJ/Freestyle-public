@@ -13,4 +13,33 @@ body{
 
     --gradient:linear-gradient(94.78deg, var(--primary-pink) 0%, var(--primary-cyan) 100%);
     --background:#1F1D2B;
+
+    --grid-width:1920px;
+}
+/* DEFAULT */
+.flex{
+    display: flex;
+}
+.flex.ai-c{
+    align-items: center;
+}
+.flex.jc-c{
+    justify-content: center;
+}
+.flex.jc-sb{
+    justify-content: space-between;
+}
+.flex.jc-e{
+    justify-content: end;
+}
+.flex.wrap{
+    flex-wrap: wrap;
+}
+.os-grid{
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color:var(--white)
 }
