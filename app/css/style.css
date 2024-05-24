@@ -14,10 +14,14 @@ body{
     --primary-pink:#9B51E0;
 
     --white:#ffffff;
+    --nav-txt:#BCBCBC;
     --gradient:linear-gradient(94.78deg, var(--primary-pink) 0%, var(--primary-cyan) 100%);
     --background:#1F1D2B;
 
     --grid-width:1920px;
+
+    --btn-radius:10px;
+
 }
 /* DEFAULT */
 .flex{
@@ -60,6 +64,7 @@ a.active{
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 a.active::after{
     content:"";
@@ -77,15 +82,31 @@ a.active::after{
 }
 /* NAVGIATION */
 .logo a{
-    font-size:1.5em;
+    font-size:2em;
     font-weight: 600;
 }
-nav ul li{
-    list-style-type: none;
-    margin:0 5px;
+nav ul > li{
+    margin:0 15px;
 }
-
+ul li, ol li{
+    list-style-type: none;
+}
 /* BUTTONS */
 .cta > div{
-    margin:0 5px;
+    margin:0 15px;
+    text-transform: uppercase;
+}
+.btn{
+    border:1px solid;
+    padding:15px;
+    border-radius: var(--btn-radius);
+}
+/* MAIN HEADER */
+.main-header{
+    font-size:0.8em;
+    color:var(--nav-txt);
+    padding:20px 0;
+}
+.main-header a{
+    color:var(--nav-txt);
 }
