@@ -110,3 +110,6 @@ ul li, ol li{
 .main-header a{
     color:var(--nav-txt);
 }
+.main-header .slider{
+    display: none;
+}
