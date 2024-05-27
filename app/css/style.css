@@ -111,5 +111,5 @@ ul li, ol li{
     color:var(--nav-txt);
 }
 .main-header .slider{
-    display: none;
+    /* display: none; */
 }
