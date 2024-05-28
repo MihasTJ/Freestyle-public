@@ -23,9 +23,8 @@ body{
     --btn-radius:10px;
 
     --transition-1:200ms ease-in-out;
-
 }
-/* DEFAULT */
+/* ------- DEFAULT -------*/
 .flex{
     display: flex;
 }
@@ -86,7 +85,7 @@ a.active::after{
     transition: rotate var(--transition-1);
     rotate:180deg;
 }
-/* NAVGIATION */
+/* ------- NAVGIATION -------*/
 .logo a{
     font-size:2em;
     font-weight: 600;
@@ -103,7 +102,7 @@ ul li, ol li{
     padding:15px;
     border-radius: var(--btn-radius);
 }
-/* MAIN HEADER */
+/* ------- MAIN HEADER -------*/
 .cta > div{
     margin:0 15px;
     text-transform: uppercase;
@@ -128,6 +127,7 @@ ul li, ol li{
     padding:1em;
     background:var(--background);
     box-shadow: 0px 7px 29px rgba(0, 0, 0, 0.95);
+    display: none;
 }
 .main-header .slider-items a{
     transition: var(--transition-1) color;
@@ -135,6 +135,7 @@ ul li, ol li{
 .main-header .slider-items a:hover{
     color:var(--primary-cyan);
 }
+/* arrow down */
 .main-header i{
     margin-left:0.5em;
     transition: var(--transition-1);
