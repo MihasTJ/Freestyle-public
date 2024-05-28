@@ -22,6 +22,8 @@ body{
 
     --btn-radius:10px;
 
+    --transition-1:200ms ease-in-out;
+
 }
 /* DEFAULT */
 .flex{
@@ -80,6 +82,10 @@ a.active::after{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.rotate-180{
+    transition: rotate var(--transition-1);
+    rotate:180deg;
+}
 /* NAVGIATION */
 .logo a{
     font-size:2em;
@@ -92,16 +98,22 @@ ul li, ol li{
     list-style-type: none;
 }
 /* BUTTONS */
-.cta > div{
-    margin:0 15px;
-    text-transform: uppercase;
-}
 .btn{
     border:1px solid;
     padding:15px;
     border-radius: var(--btn-radius);
 }
 /* MAIN HEADER */
+.cta > div{
+    margin:0 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cta svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5em;;
+}
 .main-header{
     font-size:0.8em;
     color:var(--nav-txt);
@@ -110,6 +122,20 @@ ul li, ol li{
 .main-header a{
     color:var(--nav-txt);
 }
-.main-header .slider{
-    /* display: none; */
+.main-header .slider-items{
+    margin-left:-1em;
+    margin-top:0.5em;
+    padding:1em;
+    background:var(--background);
+    box-shadow: 0px 7px 29px rgba(0, 0, 0, 0.95);
+}
+.main-header .slider-items a{
+    transition: var(--transition-1) color;
+}
+.main-header .slider-items a:hover{
+    color:var(--primary-cyan);
+}
+.main-header i{
+    margin-left:0.5em;
+    transition: var(--transition-1);
 }
