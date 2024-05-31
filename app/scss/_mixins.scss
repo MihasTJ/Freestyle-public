@@ -1,0 +1,19 @@
+@media (min-width:64em){
+
+}
+
+//640,1024,1920 [px]
+$breakpoints-up:("phone":"40em","tablet":"64em","desktop":"120em");
+$breakpoints-down:("phone":"39.9375em","tablet":"63.9375em","desktop":"119.9375em");
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up,$size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down,$size)){
+        @content;
+    }
+}

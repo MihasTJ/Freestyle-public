@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    background: $background;
+    color:$white;
+}
+/* ------- DEFAULT -------*/
+.flex{
+    display: flex;
+    &.ai-c{
+        align-items: center;
+    }
+    &.jc-c{
+        justify-content: center;
+    }
+    &.jc-sb{
+        justify-content: space-between;
+    }
+    &.jc-e{
+        justify-content: end;
+    }
+    &.wrap{
+        flex-wrap: wrap;
+    }
+}
+.os-grid{
+    max-width: $grid-width;
+    margin: 0 auto;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.container{
+    padding:10px 5%;
+}
+a{
+    text-decoration: none;
+    color:$white;
+
+    &.active{
+        position: relative;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+    }
+    &.active::after{
+        content:"";
+        position: absolute;
+        bottom:-1px;
+        left:0;
+        height: 2px;
+        width: 100%;
+        background: $primary-pink;
+    }
+}
+/* ---- Buttons ---- */
+.btn{
+    border:1px solid;
+    padding:15px;
+    border-radius: $btn-radius;
+}
+.txt-gradient{
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.rotate-180{
+    transition: rotate $transition-1;
+    rotate:180deg;
+}
+
+nav .burgerbtn{
+    @include breakpoint-down(tablet){
+        display: block;
+    }
+}
+.mobile-menu{
+    @include breakpoint-down(tablet){
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top:0;
+        right:0;
+        background:var(--background);
+        border-left:1px solid rgba(255,255,255, 0.3);
+        height: 100vh;
+        width:0px;
+        padding-top:7em;
+        overflow: hidden;
+    }
+}
+.mobile-menu__items{
+    @include breakpoint-down(tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        width: 100%;
+    }
+}
+.mobile-menu__items ul li, .mobile-menu__items .cta div{
+    @include breakpoint-down(tablet){
+        padding:1em 0;
+    }
+}
+.mobile-menu ul, .mobile-menu .cta div{
+    @include breakpoint-down(tablet){
+        width: 100%;
+    }
+}
