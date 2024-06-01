@@ -1,10 +1,61 @@
-.logo a{
-    font-size:2em;
-    font-weight: 600;
-}
-nav ul > li{
-    margin:0 15px;
-}
-ul li, ol li{
-    list-style-type: none;
+
+.nav-container{
+    background-color: $navbg;
+    width:$nav-width;
+    height: 100vh;
+    font-size:$font-small;
+
+    .nav-logo{
+        padding:2em;
+    }
+    .top-side{
+        width: 100%;
+    }
+    ul > li{
+        padding:1em;
+        border-top: 1px solid rgba($white,0.2);;
+    }
+    ul > li:last-child{
+        border-bottom: 1px solid rgba($white,0.2);;
+    }
+    ul, ul li ol{
+        width: 100%;
+    }
+    ul li ol li{
+        padding: 0.5em 1.5em;
+        // margin: 0 -1em;
+        border-top:1px solid rgba($white,0.2);;
+    }
+    a > i:first-child{
+        margin-right: 0.5em;
+    }
+    strong:not(.active){
+        font-weight: 400;
+    }
+    .burger{
+        width: 100%;
+        padding:1.5em;
+        border-top: 1px solid rgba($white,0.2);;
+    }
+    .fixed-list > ol{
+        padding-top:1em;
+        opacity: 0.6;
+    }
+    .fixed-list{
+        padding-left:0;
+        padding-right: 0;
+        padding-bottom:0;
+
+    }
+    .fixed-list a{
+        padding-left:1em;
+        transition: $transition-1 rotate;
+    }
+    .fixed-list-padding{
+        padding-bottom:1em;
+    }
+    .fixed-list i{
+        transition: 200ms rotate;
+    }
+
 }

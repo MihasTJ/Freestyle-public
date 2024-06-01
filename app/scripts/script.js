@@ -1,33 +1,30 @@
 $(document).ready(function(){
-    const navSlider = $("nav .slider");
-    const navSliderIcon = $("nav .slider i");
-    const navItems = $("nav .slider-items");
-    const navList = $('nav ul');
-    const btnBurger = $(".burgerbtn");
-    const cta =  $('nav .cta');
-    const mobileMenu =  $('.mobile-menu');
-/* animated arrow */
-    navSlider.on("click",()=>{
-        navSliderIcon.toggleClass("rotate-180");
-        navItems.fadeToggle(100);
-    })
+    const navItemsWithOl = $("nav ul > li:has(ol)");
+
+    /* fixed nav-list */
+    navItemsWithOl.each(function() {
+        $(this).addClass("fixed-list");
+        $(this).children("a").append(' <i class="fa-solid fa-chevron-down"></i>');
+    });
+
+    const navFlip = $("nav .fixed-list > a");
+    navFlip.each(function() {
+        $(this).click(function(event) {
+            event.preventDefault();
+            $(this).siblings("ol").slideToggle();
+            const icon = $(this).find(".fa-chevron-down");
+            icon.toggleClass("rotate-180");
+            
+            if (icon.hasClass("rotate-180")) {
+                $(this).parent().addClass("fixed-list-padding");
+            } else {
+                $(this).parent().removeClass("fixed-list-padding");
+            }
+        });
+    });
 /* burger menu */
+    const btnBurger = $("nav .burgerbtn");
     btnBurger.on('click',()=>{
         btnBurger.toggleClass("active-menu");
-        if(mobileMenu.css("width") == "315px"){
-            mobileMenu.css("width","0") 
-        }else{
-             mobileMenu.css("width","315px")
-            }
     })
-/* moving mobile nav */
-    if(window.innerWidth <= 1024){
-        const mobileMenuItems =  $('.mobile-menu__items');
-        cta.removeClass("flex");
-        navList.removeClass("flex");
-        navSlider.children().removeClass("flex")
-        cta.appendTo(mobileMenuItems);
-        navList.appendTo(mobileMenuItems);
-        
-    }
 });
