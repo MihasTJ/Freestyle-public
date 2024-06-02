@@ -70,7 +70,7 @@ a {
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
-.active::after {
+.active strong::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -182,6 +182,8 @@ nav {
 }
 .nav-container ul li ol li {
   padding: 0.5em 1.5em;
+}
+.nav-container ul li ol li.border {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .nav-container a > i:first-child {

@@ -61,7 +61,7 @@ a{
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 
-    &::after{
+    & strong::after{
         content:"";
         position: absolute;
         bottom:-1px;

@@ -23,7 +23,8 @@
     }
     ul li ol li{
         padding: 0.5em 1.5em;
-        // margin: 0 -1em;
+    }
+    ul li ol li.border{
         border-top:1px solid rgba($white,0.2);;
     }
     a > i:first-child{
@@ -57,5 +58,4 @@
     .fixed-list i{
         transition: 200ms rotate;
     }
-
 }
