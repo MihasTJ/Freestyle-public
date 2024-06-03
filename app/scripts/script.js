@@ -1,7 +1,7 @@
 $(document).ready(function(){
     /* create and move to right side */
-    $("nav").after("<div id='page'></div>");
-    $("body").children().not("nav, #page,script").appendTo("#page");
+    $("header").after("<div id='page'></div>");
+    $("body").children().not("header, #page, script").appendTo("#page");
 
     const navItemsWithOl = $("nav ul > li:has(ol)");
     /* fixed nav-list */

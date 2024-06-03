@@ -1,15 +1,103 @@
-header .main-header{
-    font-size: $font-small;
-    margin-top:2em;
-    .logo a{
-        font-size:calc($font-size * 2);
+header {
+    .main-header{
+        font-size: $font-small;
+        margin-top:2em;
+        .logo a{
+            font-size:calc($font-size * 2);
+        }
+        .signbtn div{
+            cursor: pointer;
+            opacity: 0.6;
+            transition: $transition-1;
+        }
+        .signbtn div:hover{
+            opacity: 1;
+        }
     }
-    .signbtn div{
-        cursor: pointer;
-        opacity: 0.6;
-        transition: $transition-1;
+    .content-header{
+        width: calc(100% - $nav-width);
+        float:right;
     }
-    .signbtn div:hover{
-        opacity: 1;
+}
+nav{
+    .nav-container{
+        background-color: $navbg;
+        width:$nav-width;
+        height: 100vh;
+        font-size:$font-small;
+        border-right:1px solid rgba($white,0.2);
+
+        .nav-logo{
+            padding:2em;
+        }
+        .top-side{
+            width: 100%;
+        }
+        ul > li{
+            padding:1em;
+            border-top: 1px solid rgba($white,0.2);;
+        }
+        ul > li:last-child{
+            border-bottom: 1px solid rgba($white,0.2);;
+        }
+        ul, ul li ol{
+            width: 100%;
+        }
+        ul li ol li{
+            padding: 0.5em 1.5em;
+        }
+        ul li ol li.border{
+            border-top:1px solid rgba($white,0.2);;
+        }
+        a > i:first-child{
+            margin-right: 0.5em;
+        }
+        strong:not(.active){
+            font-weight: 400;
+        }
+        .burger{
+            width: 100%;
+            padding:1.5em;
+            border-top: 1px solid rgba($white,0.2);;
+        }
+        .fixed-list > ol{
+            padding-top:1em;
+            opacity: 0.6;
+        }
+        .fixed-list{
+            padding-left:0;
+            padding-right: 0;
+            padding-bottom:0;
+
+        }
+        .fixed-list a{
+            padding-left:1em;
+            transition: $transition-1 rotate;
+        }
+        .fixed-list-padding{
+            padding-bottom:1em;
+        }
+        .fixed-list i{
+            transition: 200ms rotate;
+        }
+
+        .toggle-nav {
+            top:50%;
+            right: -40px;
+            font-weight: 300;
+            transform: translateY(-50%);
+            rotate:90deg;
+            background-color:$navbg;
+            text-align: center;
+            width: 80px;
+            padding:0;
+            cursor: pointer;
+            border-top-left-radius:15px ;
+            border-top-right-radius:15px ;
+            letter-spacing: 2px;
+            border:1px solid $white;
+            border-bottom:1px solid rgba($white,0.2);
+           
+        }
     }
 }

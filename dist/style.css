@@ -148,7 +148,6 @@ a {
 /*---- FRONT PAGE ----*/
 #page {
   width: calc(100% - 200px);
-  position: relative;
   float: right;
 }
 
@@ -156,65 +155,6 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.nav-container {
-  background-color: #282631;
-  width: 200px;
-  height: 100vh;
-  font-size: 16px;
-}
-.nav-container .nav-logo {
-  padding: 2em;
-}
-.nav-container .top-side {
-  width: 100%;
-}
-.nav-container ul > li {
-  padding: 1em;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-.nav-container ul > li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.nav-container ul, .nav-container ul li ol {
-  width: 100%;
-}
-.nav-container ul li ol li {
-  padding: 0.5em 1.5em;
-}
-.nav-container ul li ol li.border {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-.nav-container a > i:first-child {
-  margin-right: 0.5em;
-}
-.nav-container strong:not(.active) {
-  font-weight: 400;
-}
-.nav-container .burger {
-  width: 100%;
-  padding: 1.5em;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-.nav-container .fixed-list > ol {
-  padding-top: 1em;
-  opacity: 0.6;
-}
-.nav-container .fixed-list {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-}
-.nav-container .fixed-list a {
-  padding-left: 1em;
-  transition: 200ms ease-in-out rotate;
-}
-.nav-container .fixed-list-padding {
-  padding-bottom: 1em;
-}
-.nav-container .fixed-list i {
-  transition: 200ms rotate;
 }
 
 header .main-header {
@@ -231,4 +171,85 @@ header .main-header .signbtn div {
 }
 header .main-header .signbtn div:hover {
   opacity: 1;
+}
+header .content-header {
+  width: calc(100% - 200px);
+  float: right;
+}
+
+nav .nav-container {
+  background-color: #282631;
+  width: 200px;
+  height: 100vh;
+  font-size: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav .nav-container .nav-logo {
+  padding: 2em;
+}
+nav .nav-container .top-side {
+  width: 100%;
+}
+nav .nav-container ul > li {
+  padding: 1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav .nav-container ul > li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav .nav-container ul, nav .nav-container ul li ol {
+  width: 100%;
+}
+nav .nav-container ul li ol li {
+  padding: 0.5em 1.5em;
+}
+nav .nav-container ul li ol li.border {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav .nav-container a > i:first-child {
+  margin-right: 0.5em;
+}
+nav .nav-container strong:not(.active) {
+  font-weight: 400;
+}
+nav .nav-container .burger {
+  width: 100%;
+  padding: 1.5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav .nav-container .fixed-list > ol {
+  padding-top: 1em;
+  opacity: 0.6;
+}
+nav .nav-container .fixed-list {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+nav .nav-container .fixed-list a {
+  padding-left: 1em;
+  transition: 200ms ease-in-out rotate;
+}
+nav .nav-container .fixed-list-padding {
+  padding-bottom: 1em;
+}
+nav .nav-container .fixed-list i {
+  transition: 200ms rotate;
+}
+nav .nav-container .toggle-nav {
+  top: 50%;
+  right: -40px;
+  font-weight: 300;
+  transform: translateY(-50%);
+  rotate: 90deg;
+  background-color: #282631;
+  text-align: center;
+  width: 80px;
+  padding: 0;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
