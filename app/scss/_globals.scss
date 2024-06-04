@@ -9,6 +9,9 @@ body{
     background: $background;
     color:$white;
 }
+:root{
+    --nav-width:200px;
+}
 /* ------- DEFAULT -------*/
 .flex{
     display: flex;
@@ -30,13 +33,13 @@ body{
     &.column{
         flex-direction: column;
     }
-    &.gap{
-        gap:1em;
-    }
 }
 .os-grid{
     max-width: $grid-width;
     margin: 0 auto;
+}
+.os-content{
+    padding:1em;
 }
 .relative{
     position: relative;
@@ -73,13 +76,19 @@ a{
 }
 /* ---- Buttons ---- */
 .btn{
-    border:1px solid;
     padding:15px;
     border-radius: $btn-radius;
+    cursor: pointer;
+    text-align: center;
 
-    .empty{
+    &.btn-empty{
         background-color: transparent;
+        border:1px solid;
     }
+    &.btn-fill{
+        background:$gradient;
+    }
+
 }
 
 
@@ -132,8 +141,9 @@ a{
 
 /*---- FRONT PAGE ----*/
 #page{
-    width: calc(100% - $nav-width);
+    width: calc(100% - var(--nav-width));
     float:right;
+    transition: $transition-1;
 }
 nav{
     position: fixed;

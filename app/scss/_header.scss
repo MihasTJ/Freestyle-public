@@ -6,7 +6,6 @@ header {
             font-size:calc($font-size * 2);
         }
         .signbtn div{
-            cursor: pointer;
             opacity: 0.6;
             transition: $transition-1;
         }
@@ -15,17 +14,20 @@ header {
         }
     }
     .content-header{
-        width: calc(100% - $nav-width);
+        width: calc(100% - var(--nav-width));
         float:right;
+        transition: $transition-1;
     }
 }
 nav{
     .nav-container{
         background-color: $navbg;
-        width:$nav-width;
+        width:var(--nav-width);
         height: 100vh;
         font-size:$font-small;
         border-right:1px solid rgba($white,0.2);
+        text-wrap: nowrap;
+        transition: $transition-1;
 
         .nav-logo{
             padding:2em;
@@ -46,7 +48,7 @@ nav{
         ul li ol li{
             padding: 0.5em 1.5em;
         }
-        ul li ol li.border{
+        ul li ol li.bordernav{
             border-top:1px solid rgba($white,0.2);;
         }
         a > i:first-child{
@@ -57,7 +59,7 @@ nav{
         }
         .burger{
             width: 100%;
-            padding:1.5em;
+            padding:1.5em 0;
             border-top: 1px solid rgba($white,0.2);;
         }
         .fixed-list > ol{
@@ -97,7 +99,22 @@ nav{
             letter-spacing: 2px;
             border:1px solid $white;
             border-bottom:1px solid rgba($white,0.2);
-           
+        }
+        &.panel-menu{
+            width: 50px;
+            .nav-logo{
+                padding:1.5em;
+                svg{
+                    width: 30px;
+                }
+            }
+            li a > strong, li a i:last-child, li ol{
+                display: none;
+            }
+            .fixed-list{
+                padding-bottom:1em;
+            }
+            
         }
     }
 }
