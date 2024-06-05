@@ -9,6 +9,8 @@ body {
   font-size: 14px;
   background: #1F1D2B;
   color: #ffffff;
+  width: 100vw;
+  overflow: hidden;
 }
 
 :root {

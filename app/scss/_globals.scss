@@ -8,6 +8,8 @@ body{
     font-size: $font-size;
     background: $background;
     color:$white;
+    width: 100vw;
+    overflow: hidden;
 }
 :root{
     --nav-width:200px;
