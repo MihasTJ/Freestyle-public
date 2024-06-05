@@ -1,72 +1,62 @@
-$(document).ready(function(){
-    /* create and move to right side */
+$(document).ready(function() {
+    // Create and move to right side
     $("header").after("<div id='page'></div>");
     $("body").children().not("header, #page, script").appendTo("#page");
 
+    // Cache selectors
+    const navContainer = $(".nav-container");
     const navItemsWithOl = $("nav ul > li:has(ol)");
-    /* fixed nav-list */
-    navItemsWithOl.each(function() {
-        $(this).addClass("fixed-list");
-        $(this).children("a").append(' <i class="fa-solid fa-chevron-down"></i>');
-    });
-
-    /* node list */
-    const navFlip = $("nav .fixed-list > a");
-    navFlip.siblings("ol").children("li").addClass("bordernav");
-    
-    navFlip.each(function() {
-        $(this).click(function(event) {
-            if (!$(this).closest(".nav-container").hasClass("panel-menu")) {
-                event.preventDefault();
-                
-                $(this).siblings("ol").children("li").toggleClass("bordernav");
-                $(this).siblings("ol").slideToggle();
-                
-                const icon = $(this).find(".fa-chevron-down");
-                icon.toggleClass("rotate-180");
-                
-                if (icon.hasClass("rotate-180")) {
-                    $(this).parent().addClass("fixed-list-padding");
-                } else {
-                    $(this).parent().removeClass("fixed-list-padding");
-                }
-            }
-        });
-    });
-/* burger menu */
     const btnBurger = $("nav .burgerbtn");
     const btnToggleNav = $("nav .toggle-nav");
 
+
+    // Fixed nav-list
+    navItemsWithOl.each(function() {
+        const $this = $(this);
+        $this.addClass("fixed-list");
+        $this.children("a").append(' <i class="fa-solid fa-chevron-down"></i>');
+        $this.children("ol").children("li").addClass("bordernav");
+    });
+
+    // Toggle sub-menu visibility and icons
+    const navFlip = $("nav .fixed-list > a");
+    navFlip.each(function() {
+        $(this).on("click", function(event) {
+            const $this = $(this);
+            if (!navContainer.hasClass("panel-menu")) {
+                event.preventDefault();
+                $this.siblings("ol").slideToggle();
+                const icon = $this.find(".fa-chevron-down").toggleClass("rotate-180");
+                $this.parent().toggleClass("fixed-list-padding", icon.hasClass("rotate-180"));
+            }
+        });
+    });
+
     function toggleButtonText(button) {
-        if (button.text() === "Rozwiń") {
-            button.text("Zwiń");
-        } else {
-            button.text("Rozwiń");
-        }
+        button.text(button.text() === "Rozwiń" ? "Zwiń" : "Rozwiń");
     }
-    function sizeNav(){
-        if($(".nav-container").hasClass("panel-menu")){
-            $(':root').css('--nav-width','50px');
-        }else{
-            $(':root').css('--nav-width','200px');
-        }
+
+    function updateNavWidth() {
+        const navWidth = navContainer.hasClass("panel-menu") ? '50px' : '200px';
+        $(':root').css('--nav-width', navWidth);
+    }
+
+    function toggleMenu() {
+        btnBurger.toggleClass("active-menu");
+        navContainer.toggleClass("panel-menu");
+        updateNavWidth();
     }
 
     btnBurger.on('click', function() {
-        $(this).toggleClass("active-menu");
+        toggleMenu();
         btnToggleNav.each(function() {
             toggleButtonText($(this));
         });
-        navFlip.closest(".nav-container").toggleClass("panel-menu");
-        sizeNav()
     });
 
     btnToggleNav.on('click', function() {
         btnToggleNav.not(this).text("Rozwiń");
         toggleButtonText($(this));
-        btnBurger.toggleClass("active-menu");
-        navFlip.closest(".nav-container").toggleClass("panel-menu");
-        sizeNav()
+        toggleMenu();
     });
-
 });

@@ -18,6 +18,9 @@ body{
     &.ai-c{
         align-items: center;
     }
+    &.ai-e{
+        align-items: end;
+    }
     &.jc-c{
         justify-content: center;
     }
@@ -74,18 +77,48 @@ a{
         background: $primary-pink;
     }
 }
+.blur{
+    position: absolute;
+    width: 270px;
+    height: 210px;
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.85;
+    &-pink{
+        top:-20%;
+        left:-10%;
+        background: $primary-pink;
+    }
+    &-cyan{
+        bottom:-20%;
+        right:-10%;
+        background: $primary-cyan;
+    }
+    &-box{
+        position: relative;
+        & > div:not(.blur-pink,.blur-cyan){
+            z-index: 1;
+        }
+    }
+}
+
+
 /* ---- Buttons ---- */
 .btn{
     padding:15px;
     border-radius: $btn-radius;
     cursor: pointer;
     text-align: center;
+    min-width: 120px;
+    max-height: 45px;
+    text-align: center;
 
-    &.btn-empty{
+    &-empty{
         background-color: transparent;
         border:1px solid;
     }
-    &.btn-fill{
+    &-fill{
         background:$gradient;
     }
 

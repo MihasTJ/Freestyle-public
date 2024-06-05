@@ -1,0 +1,84 @@
+#hero{
+    background: $background;
+    margin-top:6em;
+    .hero{
+        &-info{
+            flex: 2;
+
+            h1{
+                line-height: 1;
+                font-size:calc($font-size*4);
+            }
+            p{
+                line-height: 1.1;
+                letter-spacing:0.5px;
+                margin:1em 0;
+                font-size:calc($font-size*1.2);
+            }
+            .buttons >div:first-child{
+                margin-right: 1em;
+            }
+            .buttons .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &-master-container{
+            flex:1;
+        }
+        &-master{
+            
+
+            &-format{
+                h2{
+                    margin:0 1em;
+                    font-size:calc($font-size *2.5);
+                    text-transform: uppercase;
+                }
+                i{
+                    font-size:2em;
+                    cursor: pointer;
+                }
+               &__subtitle{
+                margin-top:-2em;
+                margin-bottom:2em;
+                font-weight: 800;
+               }
+               &-account{
+                border:1px solid $white;
+                border-radius: 50px;
+                padding:1em;
+                min-width: 350px;
+
+                &-data{
+                    &__image img{
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        margin-right:1em;
+                    }
+                    &-trophy{
+                        &__user-name{
+                            font-weight: 600;
+                        }
+                        &__user-bandage p{
+                            margin:0 0.5em;
+                        }
+                    }
+
+                }    
+                &__likes{
+                    font-weight: 600;
+                    span.counter{
+                        margin-left:0.5em;
+                    }
+                }
+
+            }
+            } 
+          
+           
+        }
+    }
+}
