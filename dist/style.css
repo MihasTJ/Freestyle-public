@@ -342,6 +342,9 @@ nav .nav-container.panel-menu .fixed-list {
 #hero .hero-master-container {
   flex: 1;
 }
+#hero .hero-master-format {
+  /* BLOB ANIMATION */
+}
 #hero .hero-master-format h2 {
   margin: 0 1em;
   font-size: 35px;
@@ -350,6 +353,18 @@ nav .nav-container.panel-menu .fixed-list {
 #hero .hero-master-format i {
   font-size: 2em;
   cursor: pointer;
+}
+#hero .hero-master-format__image {
+  margin-top: 1em;
+  background: #1F1D2B;
+  width: 200px;
+  height: 200px;
+  border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
+  overflow: hidden;
+  animation: blob 7s linear infinite;
+}
+#hero .hero-master-format__image img {
+  width: 100%;
 }
 #hero .hero-master-format__subtitle {
   margin-top: -2em;
@@ -379,4 +394,22 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #hero .hero-master-format-account__likes span.counter {
   margin-left: 0.5em;
+}
+
+@keyframes blob {
+  0%, 100% {
+    border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
+  }
+  20% {
+    border-radius: 50% 50% 60% 40%/50% 60% 50% 40%;
+  }
+  40% {
+    border-radius: 60% 40% 50% 50%/60% 50% 40% 30%;
+  }
+  60% {
+    border-radius: 70% 30% 60% 40%/50% 40% 50% 60%;
+  }
+  80% {
+    border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
+  }
 }

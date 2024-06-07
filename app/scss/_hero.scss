@@ -29,7 +29,6 @@
         }
         &-master{
             
-
             &-format{
                 h2{
                     margin:0 1em;
@@ -40,45 +39,59 @@
                     font-size:2em;
                     cursor: pointer;
                 }
+                /* BLOB ANIMATION */
+                &__image{
+                    margin-top:1em;
+                    background: $background;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+                    overflow: hidden;
+                    animation: blob 7s linear infinite;
+                        & img{
+                            width: 100%;
+                        }
+                }
+
                &__subtitle{
                 margin-top:-2em;
                 margin-bottom:2em;
                 font-weight: 800;
                }
+
                &-account{
                 border:1px solid $white;
                 border-radius: 50px;
                 padding:1em;
                 min-width: 350px;
 
-                &-data{
-                    &__image img{
-                        width: 35px;
-                        height: 35px;
-                        border-radius: 50%;
-                        margin-right:1em;
-                    }
-                    &-trophy{
-                        &__user-name{
-                            font-weight: 600;
+                    &-data{
+                        &__image img{
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            margin-right:1em;
                         }
-                        &__user-bandage p{
-                            margin:0 0.5em;
-                        }
-                    }
 
-                }    
-                &__likes{
-                    font-weight: 600;
-                    span.counter{
-                        margin-left:0.5em;
+                        &-trophy{
+                            &__user-name{
+                                font-weight: 600;
+                            }
+                            &__user-bandage p{
+                                margin:0 0.5em;
+                            }
+                        }
+                    }    
+
+                    &__likes{
+                        font-weight: 600;
+
+                        span.counter{
+                            margin-left:0.5em;
+                        }
                     }
                 }
-
-            }
             } 
-          
-           
         }
     }
 }
