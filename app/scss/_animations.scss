@@ -1,0 +1,17 @@
+@keyframes blob{
+    0%, 100% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+    20% {
+        border-radius: 50% 50% 60% 40% / 50% 60% 50% 40%; // Zmieniono wartości
+    }
+    40% {
+        border-radius: 60% 40% 50% 50% / 60% 50% 40% 30%; // Zmieniono wartości
+    }
+    60% {
+        border-radius: 70% 30% 60% 40% / 50% 40% 50% 60%; // Zmieniono wartości
+    }
+    80% {
+        border-radius: 80% 20% 70% 30% / 60% 50% 40% 50%; // Zmieniono wartości
+    }
+}
