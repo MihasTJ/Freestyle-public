@@ -42,6 +42,23 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+p {
+  font-size: 16.8px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
 .os-grid {
   max-width: 1550px;
   margin: 0 auto;
@@ -322,13 +339,11 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #hero .hero-info h1 {
   line-height: 1;
-  font-size: 56px;
 }
 #hero .hero-info p {
   line-height: 1.1;
   letter-spacing: 0.5px;
   margin: 1em 0;
-  font-size: 16.8px;
 }
 #hero .hero-info .buttons > div:first-child {
   margin-right: 1em;
@@ -346,8 +361,6 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #hero .hero-master-format h2 {
   margin: 0 1em;
-  font-size: 35px;
-  text-transform: uppercase;
 }
 #hero .hero-master-format i {
   font-size: 2em;
@@ -393,6 +406,10 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #hero .hero-master-format-account__likes span.counter {
   margin-left: 0.5em;
+}
+
+#adventure {
+  margin-top: 3em;
 }
 
 @keyframes blob {
