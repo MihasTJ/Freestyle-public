@@ -47,6 +47,9 @@ nav{
         ul li ol li{
             padding: 0.5em 1.5em;
         }
+        ul li ol li a strong:hover{
+            font-weight: 600;
+        }
         ul li ol li.bordernav{
             border-top:1px solid rgba($white,0.2);;
         }

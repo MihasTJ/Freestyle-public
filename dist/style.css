@@ -268,6 +268,9 @@ nav .nav-container ul, nav .nav-container ul li ol {
 nav .nav-container ul li ol li {
   padding: 0.5em 1.5em;
 }
+nav .nav-container ul li ol li a strong:hover {
+  font-weight: 600;
+}
 nav .nav-container ul li ol li.bordernav {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -432,4 +435,4 @@ nav .nav-container.panel-menu .fixed-list {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
