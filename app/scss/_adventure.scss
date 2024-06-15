@@ -1,3 +1,12 @@
 #adventure{
     margin-top:3em;
+    .guide{
+        margin:4em 0;
+
+        &-video{
+            cursor: pointer;
+            margin-right: 2em;
+        }
+    }
+
 }
