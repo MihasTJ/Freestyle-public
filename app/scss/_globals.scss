@@ -38,6 +38,9 @@ body{
     &.column{
         flex-direction: column;
     }
+    &.gap{
+        gap:1em;
+    }
 }
 h1{
     font-size:calc($font-size*4);

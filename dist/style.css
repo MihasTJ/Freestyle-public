@@ -41,6 +41,9 @@ body {
 .flex.column {
   flex-direction: column;
 }
+.flex.gap {
+  gap: 1em;
+}
 
 h1 {
   font-size: 56px;
