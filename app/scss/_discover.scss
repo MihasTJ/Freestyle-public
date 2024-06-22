@@ -1,0 +1,22 @@
+#discover{
+    .discover-wrapper{
+        .items{
+            width: 100%;
+            .item{
+                flex:25%;
+                &:not(:first-child){
+                    padding-left: 1em;
+                }
+                &-cover img{
+                    max-width: 100%;
+                    height: auto;
+                }
+                &-line{
+                    width: 100%;
+                    background-color:$white;
+                    height: 3px;
+                }
+            }
+        }
+    }
+}
