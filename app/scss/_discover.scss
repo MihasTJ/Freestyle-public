@@ -3,6 +3,7 @@
         .items{
             width: 100%;
             .item{
+                width: 25%;
                 flex:25%;
                 &:not(:first-child){
                     padding-left: 1em;

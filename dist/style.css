@@ -437,6 +437,7 @@ nav .nav-container.panel-menu .fixed-list {
   width: 100%;
 }
 #discover .discover-wrapper .items .item {
+  width: 25%;
   flex: 25%;
 }
 #discover .discover-wrapper .items .item:not(:first-child) {
