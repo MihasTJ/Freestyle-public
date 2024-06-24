@@ -445,6 +445,7 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #discover .discover-wrapper .items .item-cover img {
   max-width: 100%;
+  min-width: 100%;
   height: auto;
 }
 #discover .discover-wrapper .items .item-line {
