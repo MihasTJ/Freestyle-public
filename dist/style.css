@@ -442,6 +442,9 @@ nav .nav-container.panel-menu .fixed-list {
 #discover .discover-wrapper .items .item:not(:first-child) {
   padding-left: 1em;
 }
+#discover .discover-wrapper .items .item:nth-child(5n) {
+  padding-left: 0em;
+}
 #discover .discover-wrapper .items .item-cover img {
   max-width: 100%;
   min-width: 100%;

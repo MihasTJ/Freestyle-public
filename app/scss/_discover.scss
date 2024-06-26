@@ -7,6 +7,9 @@
                 &:not(:first-child){
                     padding-left: 1em;
                 }
+                &:nth-child(5n){
+                    padding-left:0em;
+                }
                 &-cover img{
                     max-width: 100%;
                     min-width: 100%;
