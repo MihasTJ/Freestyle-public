@@ -435,20 +435,25 @@ nav .nav-container.panel-menu .fixed-list {
 
 #discover .discover-wrapper .items {
   width: 100%;
+  margin: 0 -1em;
+  margin-top: 3em;
 }
 #discover .discover-wrapper .items .item {
   width: 25%;
-}
-#discover .discover-wrapper .items .item:not(:first-child) {
-  padding-left: 1em;
-}
-#discover .discover-wrapper .items .item:nth-child(5n) {
-  padding-left: 0em;
+  padding-top: 2em;
+  overflow: hidden;
+  padding: 1em;
 }
 #discover .discover-wrapper .items .item-cover img {
-  max-width: 100%;
   min-width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-position: center;
+  width: auto;
 }
 #discover .discover-wrapper .items .item-line {
   width: 100%;
@@ -472,4 +477,4 @@ nav .nav-container.panel-menu .fixed-list {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
