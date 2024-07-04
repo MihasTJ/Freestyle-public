@@ -44,6 +44,9 @@ body {
 .flex.gap {
   gap: 1em;
 }
+.flex .as-c {
+  align-self: center;
+}
 
 h1 {
   font-size: 56px;

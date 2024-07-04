@@ -41,6 +41,9 @@ body{
     &.gap{
         gap:1em;
     }
+    .as-c{
+        align-self: center;
+    }
 }
 h1{
     font-size:calc($font-size*4);
