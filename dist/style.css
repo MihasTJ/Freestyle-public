@@ -65,6 +65,10 @@ p {
   margin: auto;
 }
 
+.mt-1 {
+  margin-top: 1em;
+}
+
 .pr-05 {
   padding-right: 0.5rem;
 }
@@ -471,14 +475,6 @@ nav .nav-container.panel-menu .fixed-list {
   width: 100%;
   background-color: #ffffff;
   height: 3px;
-}
-
-footer .socials {
-  margin-top: 1em;
-}
-footer .socials-icons i {
-  font-size: 2em;
-  opacity: 0.5;
 }
 
 @keyframes blob {
