@@ -264,6 +264,9 @@ header .content-header {
   transition: 200ms ease-in-out;
 }
 
+nav {
+  z-index: 10;
+}
 nav .nav-container {
   background-color: #282631;
   width: var(--nav-width);
