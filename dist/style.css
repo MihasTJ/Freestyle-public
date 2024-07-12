@@ -69,6 +69,10 @@ p {
   margin-top: 1em;
 }
 
+.mt-3 {
+  margin-top: 3em;
+}
+
 .pr-05 {
   padding-right: 0.5rem;
 }
@@ -467,10 +471,8 @@ nav .nav-container.panel-menu .fixed-list {
   min-width: 100%;
   max-width: 100%;
   max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   background-position: center;
   width: auto;
 }
@@ -496,4 +498,4 @@ nav .nav-container.panel-menu .fixed-list {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
