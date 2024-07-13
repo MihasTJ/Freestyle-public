@@ -1,3 +1,7 @@
 footer{
-
+    .nav-menu{
+        & ul ol > li.nav-subitem{
+            margin-left:0.5em;
+        }
+    }
 }

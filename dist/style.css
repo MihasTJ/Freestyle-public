@@ -482,6 +482,10 @@ nav .nav-container.panel-menu .fixed-list {
   height: 3px;
 }
 
+footer .nav-menu ul ol > li.nav-subitem {
+  margin-left: 0.5em;
+}
+
 @keyframes blob {
   0%, 100% {
     border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
