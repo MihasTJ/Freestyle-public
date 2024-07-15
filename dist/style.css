@@ -136,6 +136,12 @@ a {
   background: #9B51E0;
 }
 
+.line {
+  width: 100%;
+  background-color: #ffffff;
+  height: 2px;
+}
+
 .blur {
   position: absolute;
   width: 270px;

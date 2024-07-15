@@ -116,6 +116,11 @@ a{
         background: $primary-pink;
     }
 }
+.line{
+    width: 100%;
+    background-color: $white;
+    height: 2px;
+}
 .blur{
     position: absolute;
     width: 270px;
