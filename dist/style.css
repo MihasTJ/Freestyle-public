@@ -491,6 +491,10 @@ nav .nav-container.panel-menu .fixed-list {
 footer .nav-menu ul ol > li.nav-subitem {
   margin-left: 0.5em;
 }
+footer .copyright p {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
 
 @keyframes blob {
   0%, 100% {
