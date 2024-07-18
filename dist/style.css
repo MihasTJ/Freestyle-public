@@ -491,9 +491,18 @@ nav .nav-container.panel-menu .fixed-list {
 footer .nav-menu ul ol > li.nav-subitem {
   margin-left: 0.5em;
 }
+footer h2 {
+  text-transform: capitalize;
+}
 footer .copyright p {
   font-size: 0.8em;
   opacity: 0.8;
+}
+footer .second-menu .col:nth-child(2) {
+  max-width: 500px;
+}
+footer .second-menu .col:nth-child(3) {
+  min-width: 250px;
 }
 
 @keyframes blob {

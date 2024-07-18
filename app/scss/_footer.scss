@@ -4,8 +4,19 @@ footer{
             margin-left:0.5em;
         }
     }
+    h2{
+        text-transform: capitalize;
+    }
     .copyright p{
         font-size: 0.8em;
         opacity: 0.8;
+    }
+    .second-menu{
+        & .col:nth-child(2){
+            max-width: 500px;
+        }
+        & .col:nth-child(3){
+            min-width: 250px;
+        }
     }
 }
