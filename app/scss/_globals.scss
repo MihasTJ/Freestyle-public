@@ -75,6 +75,10 @@ p{
 }
 .opacity{
     opacity: 0.5;
+    transition: opacity $transition-1;
+}
+.opacity:hover{
+    opacity: 1;
 }
 .os-grid{
     max-width: $grid-width;

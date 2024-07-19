@@ -87,6 +87,11 @@ p {
 
 .opacity {
   opacity: 0.5;
+  transition: opacity 200ms ease-in-out;
+}
+
+.opacity:hover {
+  opacity: 1;
 }
 
 .os-grid {
@@ -477,8 +482,10 @@ nav .nav-container.panel-menu .fixed-list {
   min-width: 100%;
   max-width: 100%;
   max-height: 300px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   background-position: center;
   width: auto;
 }
@@ -521,4 +528,4 @@ footer .second-menu .col:nth-child(3) {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
