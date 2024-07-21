@@ -226,6 +226,9 @@ a{
     float:right;
     transition: $transition-1;
 }
+#page > :is(div,footer){
+    background: $background;
+}
 nav{
     position: fixed;
     top:0;
