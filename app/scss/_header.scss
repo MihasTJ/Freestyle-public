@@ -17,6 +17,7 @@ header {
         width: calc(100% - var(--nav-width));
         float:right;
         transition: $transition-1;
+        background: $background;
     }
 }
 nav{

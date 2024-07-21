@@ -254,6 +254,10 @@ a {
   transition: 200ms ease-in-out;
 }
 
+#page > :is(div, footer) {
+  background: #1F1D2B;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -277,6 +281,7 @@ header .content-header {
   width: calc(100% - var(--nav-width));
   float: right;
   transition: 200ms ease-in-out;
+  background: #1F1D2B;
 }
 
 nav {
@@ -379,7 +384,6 @@ nav .nav-container.panel-menu .fixed-list {
 }
 
 #hero {
-  background: #1F1D2B;
   margin-top: 6em;
 }
 #hero .hero-info {
