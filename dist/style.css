@@ -470,6 +470,17 @@ nav .nav-container.panel-menu .fixed-list {
   cursor: pointer;
   margin-right: 2em;
 }
+#adventure .guide img {
+  max-height: 350px;
+  min-height: 280px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#adventure .guide img:last-child {
+  max-height: 200px;
+  min-height: 150px;
+}
 
 #discover .discover-wrapper .items {
   width: 100%;
@@ -485,6 +496,7 @@ nav .nav-container.panel-menu .fixed-list {
 #discover .discover-wrapper .items .item-cover img {
   min-width: 100%;
   max-width: 100%;
+  min-height: 250px;
   max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;

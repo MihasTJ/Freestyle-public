@@ -7,6 +7,17 @@
             cursor: pointer;
             margin-right: 2em;
         }
+        & img{
+            max-height: 350px;
+            min-height: 280px;
+            max-width: 100%;
+            object-fit: cover;
+
+            &:last-child{
+                max-height: 200px;
+                min-height: 150px;
+            }
+        }
     }
 
 }
