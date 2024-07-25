@@ -22,6 +22,13 @@ header {
 }
 nav{
     z-index: 10;
+    position: fixed;
+    top:0;
+    left:0;
+    // @include breakpoint-down(tablet){
+    //             display: block;
+            
+    // }
     .nav-container{
         background-color: $navbg;
         width:var(--nav-width);

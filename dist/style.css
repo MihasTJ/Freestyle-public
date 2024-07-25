@@ -258,12 +258,6 @@ a {
   background: #1F1D2B;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 header .main-header {
   margin-top: 2em;
 }
@@ -286,6 +280,9 @@ header .content-header {
 
 nav {
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav .nav-container {
   background-color: #282631;
