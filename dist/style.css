@@ -14,6 +14,12 @@ body {
 
 :root {
   --nav-width:200px;
+  --nav-height:100px;
+}
+@media (max-width: 63.9375em) {
+  :root {
+    --nav-width:0px;
+  }
 }
 
 /* ------- DEFAULT -------*/
@@ -253,6 +259,11 @@ a {
   float: right;
   transition: 200ms ease-in-out;
 }
+@media (max-width: 63.9375em) {
+  #page {
+    margin-bottom: var(--nav-height);
+  }
+}
 
 #page > :is(div, footer) {
   background: #1F1D2B;
@@ -284,6 +295,13 @@ nav {
   top: 0;
   left: 0;
 }
+@media (max-width: 63.9375em) {
+  nav {
+    top: unset;
+    right: 0;
+    bottom: 0;
+  }
+}
 nav .nav-container {
   background-color: #282631;
   width: var(--nav-width);
@@ -291,6 +309,12 @@ nav .nav-container {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   text-wrap: nowrap;
   transition: 200ms ease-in-out;
+}
+@media (max-width: 63.9375em) {
+  nav .nav-container {
+    height: var(--nav-height);
+    width: 100vw;
+  }
 }
 nav .nav-container .nav-logo {
   padding: 2em;
