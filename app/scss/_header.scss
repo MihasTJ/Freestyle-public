@@ -25,10 +25,13 @@ nav{
     position: fixed;
     top:0;
     left:0;
-    // @include breakpoint-down(tablet){
-    //             display: block;
-            
-    // }
+
+    @include breakpoint-down(tablet){
+        top:unset;
+        right: 0;
+        bottom:0;      
+    }
+    
     .nav-container{
         background-color: $navbg;
         width:var(--nav-width);
@@ -36,6 +39,11 @@ nav{
         border-right:1px solid rgba($white,0.2);
         text-wrap: nowrap;
         transition: $transition-1;
+
+        @include breakpoint-down(tablet){
+            height: var(--nav-height);
+            width: 100vw;
+        }
 
         .nav-logo{
             padding:2em;
