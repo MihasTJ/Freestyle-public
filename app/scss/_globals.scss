@@ -12,6 +12,10 @@ body{
 }
 :root{
     --nav-width:200px;
+    --nav-height:100px;
+    @include breakpoint-down(tablet){
+        --nav-width:0px;
+    }
 }
 /* ------- DEFAULT -------*/
 .flex{
@@ -225,7 +229,11 @@ a{
     width: calc(100% - var(--nav-width));
     float:right;
     transition: $transition-1;
+    @include breakpoint-down(tablet){
+        margin-bottom:var(--nav-height);
+    }
 }
+
 #page > :is(div,footer){
     background: $background;
 }
