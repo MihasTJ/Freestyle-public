@@ -319,17 +319,28 @@ nav .nav-container {
 nav .nav-container .nav-logo {
   padding: 2em;
 }
-nav .nav-container .top-side {
+@media (max-width: 63.9375em) {
+  nav .nav-container .nav-logo {
+    display: none;
+  }
+}
+nav .nav-container ul {
   width: 100%;
 }
 nav .nav-container ul > li {
   padding: 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 63.9375em) {
+  nav .nav-container ul > li {
+    flex: 1;
+    text-align: center;
+  }
+}
 nav .nav-container ul > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-nav .nav-container ul, nav .nav-container ul li ol {
+nav .nav-container ul li ol {
   width: 100%;
 }
 nav .nav-container ul li ol li {
@@ -341,6 +352,14 @@ nav .nav-container ul li ol li a strong:hover {
 nav .nav-container ul li ol li.bordernav {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 63.9375em) {
+  nav .nav-container ul {
+    display: flex;
+  }
+}
+nav .nav-container .top-side {
+  width: 100%;
+}
 nav .nav-container a > i:first-child {
   margin-right: 0.5em;
 }
@@ -351,6 +370,11 @@ nav .nav-container .burger {
   width: 100%;
   padding: 1.5em 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 63.9375em) {
+  nav .nav-container .burger {
+    display: none;
+  }
 }
 nav .nav-container .fixed-list > ol {
   padding-top: 1em;
