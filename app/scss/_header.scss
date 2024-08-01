@@ -33,7 +33,9 @@ nav{
     }
     .nav-links{
         ul li a{
-            display: grid;
+            @include breakpoint-down(tablet){
+                display: grid;
+            }
         }
     }
     .nav-container{
