@@ -14,12 +14,16 @@ $(document).ready(function() {
     navItemsWithOl.each(function() {
         const $this = $(this);
         $this.addClass("fixed-list");
-        $this.children("a").append(' <i class="fa-solid fa-chevron-down"></i>');
+        // $this.children("a").append(' <i class="fa-solid fa-chevron-down"></i>');
         $this.children("ol").children("li").addClass("bordernav");
     });
 
+    // Create chevron-down to strong with submenu 
+    $(".nav-links ul > li:has(ol) > a > strong").append(' <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>');
+
+
     // Toggle sub-menu visibility and icons
-    const navFlip = $("nav .fixed-list > a");
+    const navFlip = $(".nav-links ul > li > a");
     navFlip.each(function() {
         $(this).on("click", function(event) {
             const $this = $(this);
@@ -31,6 +35,7 @@ $(document).ready(function() {
             }
         });
     });
+
 
     function toggleButtonText(button) {
         button.text(button.text() === "Rozwiń" ? "Zwiń" : "Rozwiń");
