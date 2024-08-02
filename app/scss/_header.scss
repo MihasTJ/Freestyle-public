@@ -93,6 +93,9 @@ nav{
         }
         a > i:first-child{
             margin-right: 0.5em;
+            @include breakpoint-down(tablet){
+                margin-right: 0px;
+            }
         }
         strong:not(.active){
             font-weight: 400;

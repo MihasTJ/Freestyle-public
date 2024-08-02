@@ -368,6 +368,11 @@ nav .nav-container .top-side {
 nav .nav-container a > i:first-child {
   margin-right: 0.5em;
 }
+@media (max-width: 63.9375em) {
+  nav .nav-container a > i:first-child {
+    margin-right: 0px;
+  }
+}
 nav .nav-container strong:not(.active) {
   font-weight: 400;
 }
