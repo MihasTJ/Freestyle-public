@@ -395,6 +395,11 @@ nav .nav-container .fixed-list {
   padding-right: 0;
   padding-bottom: 0;
 }
+@media (max-width: 63.9375em) {
+  nav .nav-container .fixed-list {
+    position: relative;
+  }
+}
 nav .nav-container .fixed-list a {
   padding-left: 1em;
   transition: 200ms ease-in-out rotate;
