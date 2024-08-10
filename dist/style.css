@@ -390,6 +390,11 @@ nav .nav-container .fixed-list > ol {
   padding-top: 1em;
   opacity: 0.6;
 }
+@media (max-width: 63.9375em) {
+  nav .nav-container .fixed-list > ol {
+    position: absolute;
+  }
+}
 nav .nav-container .fixed-list {
   padding-left: 0;
   padding-right: 0;

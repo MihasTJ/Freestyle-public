@@ -111,6 +111,9 @@ nav{
         .fixed-list > ol{
             padding-top:1em;
             opacity: 0.6;
+            @include breakpoint-down(tablet){
+                position: absolute;
+            }
         }
         .fixed-list{
             padding-left:0;
