@@ -393,6 +393,7 @@ nav .nav-container .fixed-list > ol {
 @media (max-width: 63.9375em) {
   nav .nav-container .fixed-list > ol {
     position: absolute;
+    bottom: calc(0px + 4.5em);
   }
 }
 nav .nav-container .fixed-list {

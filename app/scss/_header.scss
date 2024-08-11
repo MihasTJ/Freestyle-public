@@ -113,6 +113,7 @@ nav{
             opacity: 0.6;
             @include breakpoint-down(tablet){
                 position: absolute;
+                bottom: calc(0px + 4.5em);
             }
         }
         .fixed-list{
