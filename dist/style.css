@@ -562,6 +562,11 @@ nav .nav-container.panel-menu .fixed-list {
   overflow: hidden;
   padding: 1em;
 }
+@media (max-width: 63.9375em) {
+  #discover .discover-wrapper .items .item {
+    width: 50%;
+  }
+}
 #discover .discover-wrapper .items .item-cover img {
   min-width: 100%;
   max-width: 100%;

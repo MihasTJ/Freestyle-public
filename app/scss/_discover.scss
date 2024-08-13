@@ -5,6 +5,9 @@
             margin:0 -1em;
             margin-top:3em;
             .item{
+                @include breakpoint-down(tablet){
+                    width: 50%;
+                }
                 width: 25%;
                 padding-top:2em;
                 overflow: hidden;
