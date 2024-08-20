@@ -550,6 +550,11 @@ nav .nav-container.panel-menu .fixed-list {
   max-height: 200px;
   min-height: 150px;
 }
+@media (max-width: 63.9375em) {
+  #adventure .guide img:last-child {
+    display: none;
+  }
+}
 
 #discover .discover-wrapper .items {
   width: 100%;

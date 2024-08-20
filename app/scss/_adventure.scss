@@ -16,6 +16,9 @@
             &:last-child{
                 max-height: 200px;
                 min-height: 150px;
+                @include breakpoint-down(tablet){
+                    display: none;
+                }
             }
         }
     }
