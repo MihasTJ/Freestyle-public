@@ -458,6 +458,7 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #hero .hero-info {
   flex: 2;
+  z-index: 1;
 }
 #hero .hero-info h1 {
   line-height: 1;
@@ -477,6 +478,12 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #hero .hero-master-container {
   flex: 1;
+  justify-content: end;
+}
+@media (max-width: 63.9375em) {
+  #hero .hero-master-container {
+    justify-content: center;
+  }
 }
 #hero .hero-master-format {
   /* BLOB ANIMATION */
