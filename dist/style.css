@@ -605,8 +605,21 @@ footer .copyright p {
   font-size: 0.8em;
   opacity: 0.8;
 }
+footer .second-menu {
+  justify-content: center;
+}
+@media (min-width: 64em) {
+  footer .second-menu {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 63.9375em) {
+  footer .second-menu > div {
+    flex: 100%;
+  }
+}
 footer .second-menu .col:nth-child(2) {
-  max-width: 500px;
+  max-width: 350px;
 }
 footer .second-menu .col:nth-child(3) {
   min-width: 250px;

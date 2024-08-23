@@ -12,8 +12,17 @@ footer{
         opacity: 0.8;
     }
     .second-menu{
+        justify-content: center;
+        @include breakpoint-up(tablet){
+            justify-content: space-between;
+        }
+        & > div{
+            @include breakpoint-down(tablet){
+                flex:100%;
+            }
+        }
         & .col:nth-child(2){
-            max-width: 500px;
+            max-width: 350px;
         }
         & .col:nth-child(3){
             min-width: 250px;
