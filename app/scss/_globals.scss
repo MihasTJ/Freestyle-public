@@ -50,6 +50,9 @@ body{
 }
 h1{
     font-size:calc($font-size*4);
+    @include breakpoint-down(tablet){
+        font-size: calc($font-size*3);
+    }
 }
 h2{
     text-transform: uppercase;
