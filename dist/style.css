@@ -172,10 +172,20 @@ a {
   left: -10%;
   background: #9B51E0;
 }
+@media (max-width: 39.9375em) {
+  .blur-pink {
+    left: 0%;
+  }
+}
 .blur-cyan {
   bottom: -20%;
   right: -10%;
   background: #3081ED;
+}
+@media (max-width: 39.9375em) {
+  .blur-cyan {
+    right: 20%;
+  }
 }
 .blur-box {
   position: relative;
@@ -488,6 +498,11 @@ nav .nav-container.panel-menu .fixed-list {
 @media (max-width: 63.9375em) {
   #hero .hero-master-container {
     justify-content: center;
+  }
+}
+@media (max-width: 39.9375em) {
+  #hero .hero-master-container {
+    padding: 0;
   }
 }
 #hero .hero-master-format {
