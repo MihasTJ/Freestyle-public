@@ -143,11 +143,17 @@ a{
         top:-20%;
         left:-10%;
         background: $primary-pink;
+        @include breakpoint-down(phone){
+            left: 0%;
+        }
     }
     &-cyan{
         bottom:-20%;
         right:-10%;
         background: $primary-cyan;
+        @include breakpoint-down(phone){
+            right: 20%;
+        }
     }
     &-box{
         position: relative;
