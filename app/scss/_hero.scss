@@ -27,6 +27,9 @@
             @include breakpoint-down(tablet){
                 justify-content: center;
             }
+            @include breakpoint-down(phone){
+                padding:0;
+            }
         }
         &-master{
             
