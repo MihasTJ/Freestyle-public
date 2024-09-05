@@ -36,4 +36,9 @@ footer{
             min-width: 250px;
         }
     }
+    .social-mail{
+        @include breakpoint-down(tablet){
+            text-align: center;
+        }
+    }
 }

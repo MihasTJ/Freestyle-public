@@ -653,6 +653,11 @@ footer .second-menu .col:nth-child(2) {
 footer .second-menu .col:nth-child(3) {
   min-width: 250px;
 }
+@media (max-width: 63.9375em) {
+  footer .social-mail {
+    text-align: center;
+  }
+}
 
 @keyframes blob {
   0%, 100% {
