@@ -654,9 +654,12 @@ footer .second-menu .col:nth-child(3) {
   min-width: 250px;
 }
 @media (max-width: 63.9375em) {
-  footer .social-mail {
+  footer .socials-mail {
     text-align: center;
   }
+}
+footer .socials-icons {
+  gap: 3em;
 }
 
 @keyframes blob {

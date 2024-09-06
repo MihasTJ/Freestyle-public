@@ -36,9 +36,15 @@ footer{
             min-width: 250px;
         }
     }
-    .social-mail{
-        @include breakpoint-down(tablet){
-            text-align: center;
+    .socials{
+        &-mail{
+            @include breakpoint-down(tablet){
+                text-align: center;
+            }
+        }
+        &-icons{
+            gap:3em;
         }
     }
+    
 }
