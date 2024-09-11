@@ -2,6 +2,9 @@ footer{
     .nav-menu{
         & ul ol > li.nav-subitem{
             margin-left:0.5em;
+            @include breakpoint-down(tablet){
+                margin-left: 0;
+            }
         }
         @include breakpoint-down(tablet){
             display: flex;
@@ -9,6 +12,9 @@ footer{
             
             & > ul{
                 text-align: center;
+            }
+            & li{
+                padding:0.5em;
             }
         }
     }

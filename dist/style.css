@@ -613,12 +613,20 @@ footer .nav-menu ul ol > li.nav-subitem {
   margin-left: 0.5em;
 }
 @media (max-width: 63.9375em) {
+  footer .nav-menu ul ol > li.nav-subitem {
+    margin-left: 0;
+  }
+}
+@media (max-width: 63.9375em) {
   footer .nav-menu {
     display: flex;
     justify-content: center;
   }
   footer .nav-menu > ul {
     text-align: center;
+  }
+  footer .nav-menu li {
+    padding: 0.5em;
   }
 }
 footer h2 {
