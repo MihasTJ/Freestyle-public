@@ -132,6 +132,9 @@ nav{
         .fixed-list a{
             padding-left:1em;
             transition: $transition-1 rotate;
+            @include breakpoint-down(tablet){
+                padding-left:0;
+            }
         }
         .fixed-list-padding{
             padding-bottom:1em;
