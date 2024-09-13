@@ -360,6 +360,11 @@ nav .nav-container ul > li {
 nav .nav-container ul > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 63.9375em) {
+  nav .nav-container ul > li:last-child {
+    border-bottom: unset;
+  }
+}
 nav .nav-container ul li ol {
   width: 100%;
 }
@@ -570,7 +575,8 @@ nav .nav-container.panel-menu .fixed-list {
   max-height: 350px;
   min-height: 280px;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #adventure .guide img:last-child {
   max-height: 200px;
@@ -603,8 +609,10 @@ nav .nav-container.panel-menu .fixed-list {
   max-width: 100%;
   min-height: 250px;
   max-height: 300px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   background-position: center;
   width: auto;
 }
@@ -685,4 +693,4 @@ footer .socials-icons {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
