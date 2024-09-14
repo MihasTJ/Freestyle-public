@@ -6,6 +6,9 @@
         &-video{
             cursor: pointer;
             margin-right: 2em;
+            @include breakpoint-down(tablet){
+                margin-right: 0;
+            }
         }
         & img{
             max-height: 350px;
