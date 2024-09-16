@@ -593,6 +593,11 @@ nav .nav-container.panel-menu .fixed-list {
   }
 }
 
+@media (max-width: 63.9375em) {
+  #discover .discover-wrapper {
+    margin: 0 -1em;
+  }
+}
 #discover .discover-wrapper .items {
   width: 100%;
   margin: 0 -1em;

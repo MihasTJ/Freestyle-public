@@ -1,5 +1,8 @@
 #discover{
     .discover-wrapper{
+        @include breakpoint-down(tablet){
+            margin:0 -1em;
+        }
         .items{
             width: 100%;
             margin:0 -1em;
