@@ -69,7 +69,10 @@ nav{
                 }
             }
             > li:last-child{
-                border-bottom: 1px solid rgba($white,0.2);;
+                border-bottom: 1px solid rgba($white,0.2);
+                @include breakpoint-down(tablet){
+                    border-bottom: 0px;
+                }
             }
             li ol{
                 width: 100%;

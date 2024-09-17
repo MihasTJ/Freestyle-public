@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   background: #1F1D2B;
   color: #ffffff;
   width: 100%;
@@ -14,7 +14,7 @@ body {
 
 :root {
   --nav-width:200px;
-  --nav-height:65px;
+  --nav-height:max-content;
 }
 @media (max-width: 63.9375em) {
   :root {
@@ -55,21 +55,21 @@ body {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
 }
 @media (max-width: 63.9375em) {
   h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 p {
-  font-size: 16.8px;
+  font-size: 14.4px;
 }
 
 .m-a {
@@ -288,7 +288,7 @@ header .main-header {
   margin-top: 2em;
 }
 header .main-header .logo a {
-  font-size: 42px;
+  font-size: 36px;
 }
 header .main-header .signbtn div {
   opacity: 0.6;
@@ -359,6 +359,11 @@ nav .nav-container ul > li {
 }
 nav .nav-container ul > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 63.9375em) {
+  nav .nav-container ul > li:last-child {
+    border-bottom: 0px;
+  }
 }
 nav .nav-container ul li ol {
   width: 100%;
