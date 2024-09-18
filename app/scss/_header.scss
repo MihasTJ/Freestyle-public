@@ -94,10 +94,17 @@ nav{
         .top-side{
             width: 100%;
         }
-        a > i:first-child{
-            margin-right: 0.5em;
-            @include breakpoint-down(tablet){
-                margin-right: 0px;
+        a{
+            & i{
+                
+            }
+            
+            & > i:first-child{
+                margin-right: 0.5em;
+                @include breakpoint-down(tablet){
+                    margin-right: 0px;
+                    font-size: 1.5em;
+                }
             }
         }
         strong:not(.active){
