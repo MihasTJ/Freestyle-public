@@ -151,6 +151,11 @@ a {
   width: 100%;
   background: #9B51E0;
 }
+@media (max-width: 63.9375em) {
+  .active strong::after {
+    display: none;
+  }
+}
 
 .line {
   width: 100%;

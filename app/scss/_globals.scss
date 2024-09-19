@@ -124,6 +124,10 @@ a{
         height: 2px;
         width: 100%;
         background: $primary-pink;
+        
+        @include breakpoint-down(tablet){
+            display: none;
+        }
     }
 }
 .line{
