@@ -566,26 +566,35 @@ nav .nav-container.panel-menu .fixed-list {
 }
 #adventure .guide {
   margin: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #adventure .guide-video {
   cursor: pointer;
   margin-right: 2em;
-}
-@media (max-width: 63.9375em) {
-  #adventure .guide-video {
-    margin-right: 0;
-  }
+  width: 50%;
+  max-width: 100%;
+  height: auto;
 }
 #adventure .guide img {
   max-height: 350px;
-  min-height: 280px;
+  width: 50%;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 63.9375em) {
+  #adventure .guide img {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 #adventure .guide img:last-child {
   max-height: 200px;
   min-height: 150px;
+  width: auto;
 }
 @media (max-width: 63.9375em) {
   #adventure .guide img:last-child {
