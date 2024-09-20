@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   background: #1F1D2B;
   color: #ffffff;
   width: 100%;
@@ -14,7 +14,7 @@ body {
 
 :root {
   --nav-width:200px;
-  --nav-height:65px;
+  --nav-height:max-content;
 }
 @media (max-width: 63.9375em) {
   :root {
@@ -55,21 +55,21 @@ body {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
 }
 @media (max-width: 63.9375em) {
   h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 p {
-  font-size: 16.8px;
+  font-size: 14.4px;
 }
 
 .m-a {
@@ -150,6 +150,11 @@ a {
   height: 2px;
   width: 100%;
   background: #9B51E0;
+}
+@media (max-width: 63.9375em) {
+  .active strong::after {
+    display: none;
+  }
 }
 
 .line {
@@ -288,7 +293,7 @@ header .main-header {
   margin-top: 2em;
 }
 header .main-header .logo a {
-  font-size: 42px;
+  font-size: 36px;
 }
 header .main-header .signbtn div {
   opacity: 0.6;
@@ -362,7 +367,7 @@ nav .nav-container ul > li:last-child {
 }
 @media (max-width: 63.9375em) {
   nav .nav-container ul > li:last-child {
-    border-bottom: unset;
+    border-bottom: 0px;
   }
 }
 nav .nav-container ul li ol {
@@ -391,6 +396,7 @@ nav .nav-container a > i:first-child {
 @media (max-width: 63.9375em) {
   nav .nav-container a > i:first-child {
     margin-right: 0px;
+    font-size: 1.5em;
   }
 }
 nav .nav-container strong:not(.active) {
@@ -633,10 +639,8 @@ nav .nav-container.panel-menu .fixed-list {
   max-width: 100%;
   min-height: 250px;
   max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   background-position: center;
   width: auto;
 }
@@ -717,4 +721,4 @@ footer .socials-icons {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */

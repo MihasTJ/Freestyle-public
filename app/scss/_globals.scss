@@ -12,7 +12,7 @@ body{
 }
 :root{
     --nav-width:200px;
-    --nav-height:65px;
+    --nav-height:max-content;
     @include breakpoint-down(tablet){
         --nav-width:0px;
     }
@@ -124,6 +124,10 @@ a{
         height: 2px;
         width: 100%;
         background: $primary-pink;
+        
+        @include breakpoint-down(tablet){
+            display: none;
+        }
     }
 }
 .line{

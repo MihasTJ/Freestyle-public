@@ -71,7 +71,7 @@ nav{
             > li:last-child{
                 border-bottom: 1px solid rgba($white,0.2);
                 @include breakpoint-down(tablet){
-                    border-bottom: unset;
+                    border-bottom: 0px;
                 }
             }
             li ol{
@@ -94,10 +94,17 @@ nav{
         .top-side{
             width: 100%;
         }
-        a > i:first-child{
-            margin-right: 0.5em;
-            @include breakpoint-down(tablet){
-                margin-right: 0px;
+        a{
+            & i{
+                
+            }
+            
+            & > i:first-child{
+                margin-right: 0.5em;
+                @include breakpoint-down(tablet){
+                    margin-right: 0px;
+                    font-size: 1.5em;
+                }
             }
         }
         strong:not(.active){
