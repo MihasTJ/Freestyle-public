@@ -185,6 +185,16 @@ nav{
                 padding-bottom:1em;
             }
             
+            ul li{
+                text-align: center;
+            }
+            .fixed-list a{
+                padding-left: 0;
+            }
+            a > i:first-child{
+                margin-right: 0;
+            }
+
         }
     }
 }
