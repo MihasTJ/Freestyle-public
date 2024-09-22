@@ -3,8 +3,8 @@
 }
 
 //640,1024,1920 [px]
-$breakpoints-up:("phone":"40em","tablet":"64em","desktop":"120em");
-$breakpoints-down:("phone":"39.9375em","tablet":"63.9375em","desktop":"119.9375em");
+$breakpoints-up:("phone":"40.0625em","tablet":"64.0625em","desktop":"120.0625m");
+$breakpoints-down:("phone":"40em","tablet":"64em","desktop":"120em");
 
 @mixin breakpoint-up($size){
     @media (min-width: map-get($breakpoints-up,$size)){
