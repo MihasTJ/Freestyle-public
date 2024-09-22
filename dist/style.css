@@ -16,7 +16,7 @@ body {
   --nav-width:200px;
   --nav-height:max-content;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   :root {
     --nav-width:0px;
   }
@@ -57,7 +57,7 @@ body {
 h1 {
   font-size: 48px;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   h1 {
     font-size: 36px;
   }
@@ -151,7 +151,7 @@ a {
   width: 100%;
   background: #9B51E0;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   .active strong::after {
     display: none;
   }
@@ -177,7 +177,7 @@ a {
   left: -10%;
   background: #9B51E0;
 }
-@media (max-width: 39.9375em) {
+@media (max-width: 40em) {
   .blur-pink {
     left: 0%;
   }
@@ -187,7 +187,7 @@ a {
   right: 0%;
   background: #3081ED;
 }
-@media (max-width: 39.9375em) {
+@media (max-width: 40em) {
   .blur-cyan {
     right: 20%;
   }
@@ -279,7 +279,7 @@ a {
   float: right;
   transition: 200ms ease-in-out;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   #page {
     margin-bottom: var(--nav-height);
   }
@@ -315,14 +315,14 @@ nav {
   top: 0;
   left: 0;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav {
     top: unset;
     right: 0;
     bottom: 0;
   }
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-links ul li a {
     display: grid;
   }
@@ -335,16 +335,16 @@ nav .nav-container {
   text-wrap: nowrap;
   transition: 200ms ease-in-out;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container {
     height: var(--nav-height);
-    width: 100vw;
+    width: 100%;
   }
 }
 nav .nav-container .nav-logo {
   padding: 2em;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container .nav-logo {
     display: none;
   }
@@ -356,7 +356,7 @@ nav .nav-container ul > li {
   padding: 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container ul > li {
     flex: 1;
     text-align: center;
@@ -365,7 +365,7 @@ nav .nav-container ul > li {
 nav .nav-container ul > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container ul > li:last-child {
     border-bottom: 0px;
   }
@@ -382,7 +382,7 @@ nav .nav-container ul li ol li a strong:hover {
 nav .nav-container ul li ol li.bordernav {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container ul {
     display: flex;
   }
@@ -393,7 +393,7 @@ nav .nav-container .top-side {
 nav .nav-container a > i:first-child {
   margin-right: 0.5em;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container a > i:first-child {
     margin-right: 0px;
     font-size: 1.5em;
@@ -407,7 +407,7 @@ nav .nav-container .burger {
   padding: 1.5em 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container .burger {
     display: none;
   }
@@ -416,7 +416,7 @@ nav .nav-container .fixed-list > ol {
   padding-top: 1em;
   opacity: 0.6;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container .fixed-list > ol {
     display: none;
     position: absolute;
@@ -431,7 +431,7 @@ nav .nav-container .fixed-list {
   padding-right: 0;
   padding-bottom: 0;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container .fixed-list {
     position: relative;
   }
@@ -440,7 +440,7 @@ nav .nav-container .fixed-list a {
   padding-left: 1em;
   transition: 200ms ease-in-out rotate;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   nav .nav-container .fixed-list a {
     padding-left: 0;
   }
@@ -496,6 +496,11 @@ nav .nav-container.panel-menu a > i:first-child {
 #hero {
   margin-top: 6em;
 }
+@media (max-width: 64em) {
+  #hero {
+    margin-top: 2em;
+  }
+}
 #hero .hero-info {
   flex: 2;
   z-index: 1;
@@ -519,7 +524,7 @@ nav .nav-container.panel-menu a > i:first-child {
 #hero .hero-master-container {
   flex: 1;
 }
-@media (max-width: 39.9375em) {
+@media (max-width: 40em) {
   #hero .hero-master-container {
     padding: 0;
   }
@@ -600,7 +605,7 @@ nav .nav-container.panel-menu a > i:first-child {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   #adventure .guide img {
     margin-right: 0;
     width: 100%;
@@ -611,13 +616,13 @@ nav .nav-container.panel-menu a > i:first-child {
   min-height: 150px;
   width: auto;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   #adventure .guide img:last-child {
     display: none;
   }
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   #discover .discover-wrapper {
     margin: 0 -1em;
   }
@@ -627,7 +632,7 @@ nav .nav-container.panel-menu a > i:first-child {
   margin: 0 -1em;
   margin-top: 3em !important;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   #discover .discover-wrapper .items {
     margin: auto;
   }
@@ -638,7 +643,7 @@ nav .nav-container.panel-menu a > i:first-child {
   overflow: hidden;
   padding: 1em;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   #discover .discover-wrapper .items .item {
     width: 50%;
   }
@@ -664,12 +669,12 @@ nav .nav-container.panel-menu a > i:first-child {
 footer .nav-menu ul ol > li.nav-subitem {
   margin-left: 0.5em;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   footer .nav-menu ul ol > li.nav-subitem {
     margin-left: 0;
   }
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   footer .nav-menu {
     display: flex;
     justify-content: center;
@@ -691,12 +696,12 @@ footer .copyright p {
 footer .second-menu {
   justify-content: center;
 }
-@media (min-width: 64em) {
+@media (min-width: 64.0625em) {
   footer .second-menu {
     justify-content: space-between;
   }
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   footer .second-menu > div {
     flex: 100%;
   }
@@ -707,7 +712,7 @@ footer .second-menu .col:nth-child(2) {
 footer .second-menu .col:nth-child(3) {
   min-width: 250px;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 64em) {
   footer .socials-mail {
     text-align: center;
   }
