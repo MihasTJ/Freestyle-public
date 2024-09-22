@@ -1,5 +1,8 @@
 #hero{
     margin-top:6em;
+    @include breakpoint-down(tablet){
+        margin-top: 2em;
+    }
     .hero{
         &-info{
             flex: 2;
