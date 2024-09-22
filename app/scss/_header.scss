@@ -48,7 +48,7 @@ nav{
 
         @include breakpoint-down(tablet){
             height: var(--nav-height);
-            width: 100vw;
+            width: 100%;
         }
 
         .nav-logo{
