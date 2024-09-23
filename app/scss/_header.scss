@@ -1,6 +1,5 @@
 header {
     .main-header{
-        // font-size: $font-size;
         margin-top:2em;
         .logo a{
             font-size:calc($font-size * 3);
@@ -95,9 +94,6 @@ nav{
             width: 100%;
         }
         a{
-            & i{
-                
-            }
             
             & > i:first-child{
                 margin-right: 0.5em;

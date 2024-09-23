@@ -14,7 +14,6 @@ $(document).ready(function() {
     navItemsWithOl.each(function() {
         const $this = $(this);
         $this.addClass("fixed-list");
-        // $this.children("a").append(' <i class="fa-solid fa-chevron-down"></i>');
         $this.children("ol").children("li").addClass("bordernav");
     });
 
