@@ -395,8 +395,9 @@ nav .nav-container a > i:first-child {
 }
 @media (max-width: 64em) {
   nav .nav-container a > i:first-child {
-    margin-right: 0px;
     font-size: 1.5em;
+    margin-right: 0px;
+    margin-bottom: 0.3em;
   }
 }
 nav .nav-container strong:not(.active) {
