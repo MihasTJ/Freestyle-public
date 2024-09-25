@@ -57,9 +57,15 @@ h1{
 h2{
     text-transform: uppercase;
     font-size:calc($font-size *2.5);
+    @include breakpoint-down(phone){
+        font-size:calc($font-size *2);
+    }
 }
 p{
     font-size:calc($font-size*1.2);
+    @include breakpoint-down(phone){
+        font-size:calc($font-size *1);
+    }
 }
 .m-a{
     margin: auto;
