@@ -94,6 +94,10 @@ p {
   margin-top: 3em;
 }
 
+.mb-1 {
+  margin-bottom: 1em;
+}
+
 .pr-05 {
   padding-right: 0.5rem;
 }
@@ -538,6 +542,7 @@ nav .nav-container.panel-menu a > i:first-child {
 @media (max-width: 40em) {
   #hero .hero-master-container {
     padding: 0;
+    margin-left: -2.5%;
   }
 }
 #hero .hero-master-format {
@@ -613,8 +618,7 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 50%;
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media (max-width: 64em) {
   #adventure .guide img {
@@ -664,10 +668,8 @@ nav .nav-container.panel-menu a > i:first-child {
   max-width: 100%;
   min-height: 250px;
   max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   background-position: center;
   width: auto;
 }
@@ -748,4 +750,4 @@ footer .socials-icons {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
