@@ -28,11 +28,12 @@
             flex:1;
             @include breakpoint-down(phone){
                 padding:0;
-                margin-left:-2.5%;
             }
         }
         &-master{
-            
+            @include breakpoint-down(phone){
+                padding:0;
+            }
             &-format{
                 h2{
                     margin:0 1em;

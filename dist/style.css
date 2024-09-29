@@ -542,7 +542,11 @@ nav .nav-container.panel-menu a > i:first-child {
 @media (max-width: 40em) {
   #hero .hero-master-container {
     padding: 0;
-    margin-left: -2.5%;
+  }
+}
+@media (max-width: 40em) {
+  #hero .hero-master {
+    padding: 0;
   }
 }
 #hero .hero-master-format {
@@ -693,8 +697,10 @@ footer .nav-menu ul ol > li.nav-subitem {
 footer .nav-menu ul ol > li:nth-child(2) {
   margin-top: 0.5em;
 }
-footer .nav-menu ul ol > li:last-child {
-  margin-bottom: -0.5em;
+@media (max-width: 64em) {
+  footer .nav-menu ul ol > li:last-child {
+    margin-bottom: -0.5em;
+  }
 }
 @media (max-width: 64em) {
   footer .nav-menu {
