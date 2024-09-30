@@ -70,7 +70,6 @@ $(document).ready(function() {
      *******************************************
      *******************************************/
     if(window.innerWidth <= 1024){
-        console.log('tablet version');
         /* to delete */
         $("header .logo a strong").text("FS"); 
         /* to delete */
