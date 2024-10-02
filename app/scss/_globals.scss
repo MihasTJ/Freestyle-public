@@ -187,10 +187,15 @@ a{
     max-height: 45px;
     text-align: center;
     line-height: 0;
+    transition: $transition-1;
 
     &-empty{
         background-color: transparent;
         border:1px solid;
+        &:hover{
+            background-color: $white;
+            color:$navbg;
+        }
     }
     &-fill{
         background:$gradient;

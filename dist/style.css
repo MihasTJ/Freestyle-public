@@ -223,10 +223,15 @@ a {
   max-height: 45px;
   text-align: center;
   line-height: 0;
+  transition: 200ms ease-in-out;
 }
 .btn-empty {
   background-color: transparent;
   border: 1px solid;
+}
+.btn-empty:hover {
+  background-color: #ffffff;
+  color: #282631;
 }
 .btn-fill {
   background: linear-gradient(94.78deg, #9B51E0 0%, #3081ED 100%);
