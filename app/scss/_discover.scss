@@ -19,15 +19,26 @@
                 padding-top:2em;
                 overflow: hidden;
                 padding:1em;
-                &-cover img{
-                    min-width: 100%;
-                    max-width: 100%;
-                    min-height: 250px;
-                    max-height:300px;
-                    object-fit: cover;
-                    object-position: center;
-                    background-position: center;
-                    width:auto;
+                &-cover{
+                      overflow: hidden;
+                      min-width: 100%;
+                      max-width: 100%;
+                      min-height: 250px;
+                      max-height:300px;
+                      & img{
+                        transition: $transition-1;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 250px;
+                        max-height:300px;
+                        object-fit: cover;
+                        object-position: center;
+                        background-position: center;
+                        width:auto;
+                        &:hover{
+                            zoom:1.3;
+                        }
+                      }
                 }
                 &-line{
                     width: 100%;
