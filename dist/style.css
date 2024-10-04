@@ -676,19 +676,36 @@ nav .nav-container.panel-menu a > i:first-child {
   overflow: hidden;
   min-width: 100%;
   max-width: 100%;
-  min-height: 250px;
-  max-height: 300px;
+  max-height: 150px;
+}
+@media (max-width: 64em) {
+  #discover .discover-wrapper .items .item-cover {
+    max-height: 250px;
+  }
+}
+@media (max-width: 40em) {
+  #discover .discover-wrapper .items .item-cover {
+    max-height: 150px;
+  }
 }
 #discover .discover-wrapper .items .item-cover img {
   transition: 200ms ease-in-out;
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 250px;
-  max-height: 300px;
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
   object-fit: cover;
   object-position: center;
   background-position: center;
-  width: auto;
+}
+@media (max-width: 64em) {
+  #discover .discover-wrapper .items .item-cover img {
+    max-height: 250px;
+  }
+}
+@media (max-width: 40em) {
+  #discover .discover-wrapper .items .item-cover img {
+    max-height: 150px;
+  }
 }
 #discover .discover-wrapper .items .item-cover img:hover {
   zoom: 1.3;
