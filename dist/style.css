@@ -724,8 +724,10 @@ footer .nav-menu ul ol > li.nav-subitem {
     margin-left: 0;
   }
 }
-footer .nav-menu ul ol > li:nth-child(2) {
-  margin-top: 0.5em;
+@media (max-width: 64em) {
+  footer .nav-menu ul ol > li:nth-child(2) {
+    margin-top: 0.5em;
+  }
 }
 @media (max-width: 64em) {
   footer .nav-menu ul ol > li:last-child {

@@ -7,7 +7,9 @@ footer{
             }
         }
         & ul ol > li:nth-child(2){
-            margin-top:0.5em;
+            @include breakpoint-down(tablet){
+                margin-top:0.5em;
+            }
         }
         @include breakpoint-down(tablet){
             & ul ol > li:last-child{
