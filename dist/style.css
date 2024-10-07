@@ -716,7 +716,8 @@ nav .nav-container.panel-menu a > i:first-child {
 #discover .discover-wrapper .items .item-line {
   width: 100%;
   background-color: #ffffff;
-  height: 3px;
+  height: 2px;
+  margin: 0.5em 0;
 }
 
 footer .nav-menu ul ol > li.nav-subitem {
