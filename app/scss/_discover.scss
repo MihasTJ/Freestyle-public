@@ -5,7 +5,7 @@
         }
         .items{
             width: 100%;
-            margin:0 -1em;
+            margin:0;
             margin-top:3em !important;
 
             @include breakpoint-down(tablet){
@@ -19,11 +19,17 @@
                 padding-top:2em;
                 overflow: hidden;
                 padding:1em;
+                &-size{
+                    padding: 0 5%;
+                    @include breakpoint-down(tablet){
+                        padding: unset;
+                    }
+                }
                 &-cover{
                       overflow: hidden;
                       min-width: 100%;
                       max-width: 100%;
-                      max-height: 150px;
+                      max-height: 200px;
                       @include breakpoint-down(tablet){
                         max-height: 250px;
                       }
@@ -33,8 +39,8 @@
                       & img{
                         transition: $transition-1;
                         width: 100%;
-                        min-height: 150px;
-                        max-height: 150px;
+                        min-height: 200px;
+                        max-height: 200px;
                         object-fit: cover;
                         object-position: center;
                         background-position: center;
