@@ -161,12 +161,31 @@
             <div class="flex ai-c jc-sb">
                 <h2>Odkryj</h2>
                 <div class="buttons flex gap ai-c">
-                    <div class="category flex ai-c">
+                    <div class="category flex ai-c relative">
                         <p class="btn flex ai-c">
                             <i class="fa-regular fa-file pr-05"></i>
                             Kategorie
                         </p>
-                        <!-- online, offline, linijki, nawijka -->
+                        <ul class="absolute category-form">
+                            <form>
+                                <div class="form-group">
+                                    <input type="checkbox" id="online">
+                                    <label for="online">Online</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="offline">
+                                    <label for="offline">offline</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="nawijka">
+                                    <label for="nawijka">nawijka</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="linijki">
+                                    <label for="linijki">linijki</label>
+                                </div>
+                            </form>
+                        </ul>
                     </div>
                     <div class="filter flex ai-c">
                         
