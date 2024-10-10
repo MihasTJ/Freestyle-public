@@ -18,6 +18,34 @@ body{
     }
 }
 /* ------- DEFAULT -------*/
+form{
+    position: relative;
+    display: flex;
+    /* !!!! need to add js listener !!!!*/
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: max-content;
+    padding:1em;
+    background-color: $background;
+    border:1px solid rgba($white,0.5);
+    z-index: 10;
+    
+
+    & .form-group{
+        display: flex;
+        align-items: center;
+        width: 40%;
+
+        & input{
+            margin-right: 5px;
+        }
+        & label{
+            text-transform: capitalize;
+        }
+    }
+}
+
 .flex{
     display: flex;
     &.ai-c{
