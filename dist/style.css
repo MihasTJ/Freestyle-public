@@ -23,6 +23,31 @@ body {
 }
 
 /* ------- DEFAULT -------*/
+form {
+  position: relative;
+  display: flex;
+  /* !!!! need to add js listener !!!!*/
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: max-content;
+  padding: 1em;
+  background-color: #1F1D2B;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+form .form-group {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+form .form-group input {
+  margin-right: 5px;
+}
+form .form-group label {
+  text-transform: capitalize;
+}
+
 .flex {
   display: flex;
 }
@@ -627,8 +652,7 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 50%;
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media (max-width: 64em) {
   #adventure .guide img {
@@ -647,6 +671,9 @@ nav .nav-container.panel-menu a > i:first-child {
   }
 }
 
+#discover .buttons .category-form {
+  top: 4em;
+}
 @media (max-width: 64em) {
   #discover .discover-wrapper {
     margin: 0 -1em;
@@ -702,10 +729,8 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 100%;
   min-height: 200px;
   max-height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   background-position: center;
 }
 @media (max-width: 64em) {
@@ -809,4 +834,4 @@ footer .socials-icons {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */

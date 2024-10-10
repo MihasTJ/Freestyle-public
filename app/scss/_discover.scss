@@ -1,4 +1,11 @@
 #discover{
+    .buttons{
+        .category{
+            &-form{
+                top:4em;
+            }
+        }
+    }
     .discover-wrapper{
         @include breakpoint-down(tablet){
             margin:0 -1em;
