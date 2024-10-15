@@ -64,6 +64,34 @@ $(document).ready(function() {
         toggleMenu();
     });
 
+    // **** toggle buttons form
+    function toggleForm(formToShow, formToHide) {
+        $(formToHide).css('display', 'none'); // Ukryj drugi formularz
+        $(formToShow).css('display', function(index, value) {
+            return value === 'flex' ? 'none' : 'flex'; // Przełącz widoczność pierwszego formularza
+        });
+    }
+
+    $('.buttons .category').on('click', function(event) {
+        event.stopPropagation(); 
+        toggleForm('.category-form form', '.filter-form form');
+    });
+
+    $('.buttons .filter').on('click', function(event) {
+        event.stopPropagation(); 
+        toggleForm('.filter-form form', '.category-form form'); 
+    });
+
+    $('.category-form form, .filter-form form').on('click', function(event) {
+        event.stopPropagation(); 
+    });
+
+    $(document).on('click', function() {
+        $('.category-form form, .filter-form form').css('display', 'none'); 
+    });
+    // toggle buttons form *****
+
+
     /*******************************************
      *******************************************
      *********    TABLET VERSION   *************
