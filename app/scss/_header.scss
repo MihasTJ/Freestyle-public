@@ -121,7 +121,7 @@ nav{
             @include breakpoint-down(tablet){
                 display: none;
                 position: absolute;
-                bottom: calc(0px + 4.5em + 1px);
+                bottom:5.5em;
                 background: $navbg;
                 opacity: 1;
                 padding-top: 0;
