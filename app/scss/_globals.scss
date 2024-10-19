@@ -20,12 +20,10 @@ body{
 /* ------- DEFAULT -------*/
 form{
     position: relative;
-    display: flex;
-    /* !!!! need to add js listener !!!!*/
     display: none;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: max-content;
+    width: 100%;
     padding:1em;
     background-color: $background;
     border:1px solid rgba($white,0.5);
