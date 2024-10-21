@@ -247,6 +247,28 @@ a {
   width: 80%;
   height: 80%;
 }
+.popup-close {
+  position: relative;
+  width: 30px;
+  height: 40px;
+}
+.popup-close span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transform-origin: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.popup-close span:first-child {
+  right: 0;
+  transform: rotate(45deg);
+}
+.popup-close span:last-child {
+  right: 0;
+  transform: rotate(-45deg);
+}
 
 /* ---- Buttons ---- */
 .btn {
