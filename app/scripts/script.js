@@ -91,6 +91,23 @@ $(document).ready(function() {
     });
     // toggle buttons form *****
 
+    // Close popup
+    const popup = $('.popup');
+    const popupBg = $(".popup .popup-bg");
+    const popupClose = $(".popup .popup-close");
+
+    popupBg.on("click", () => {
+        popupCloseFunction();
+    });
+
+    popupClose.on("click", () => {
+        popupCloseFunction();
+    });
+
+    function popupCloseFunction() {
+        popup.css("display", "none");
+    }
+
 
     /*******************************************
      *******************************************
