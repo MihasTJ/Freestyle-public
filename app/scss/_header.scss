@@ -4,11 +4,11 @@ header {
         .logo a{
             font-size:calc($font-size * 3);
         }
-        .signbtn div{
+        .signbtn :is(.login,.register){
             opacity: 0.6;
             transition: $transition-1;
         }
-        .signbtn div:hover{
+        .signbtn :is(.login,.register):hover{
             opacity: 1;
         }
     }
