@@ -23,29 +23,6 @@ body {
 }
 
 /* ------- DEFAULT -------*/
-form {
-  position: relative;
-  display: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1em;
-  background-color: #1F1D2B;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  z-index: 10;
-}
-form .form-group {
-  display: flex;
-  align-items: center;
-  width: 40%;
-}
-form .form-group input {
-  margin-right: 5px;
-}
-form .form-group label {
-  text-transform: capitalize;
-}
-
 .flex {
   display: flex;
 }
@@ -386,11 +363,11 @@ header .main-header {
 header .main-header .logo a {
   font-size: 36px;
 }
-header .main-header .signbtn div {
+header .main-header .signbtn :is(.login, .register) {
   opacity: 0.6;
   transition: 200ms ease-in-out;
 }
-header .main-header .signbtn div:hover {
+header .main-header .signbtn :is(.login, .register):hover {
   opacity: 1;
 }
 header .content-header {
@@ -699,8 +676,7 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 50%;
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media (max-width: 64em) {
   #adventure .guide img {
@@ -719,6 +695,28 @@ nav .nav-container.panel-menu a > i:first-child {
   }
 }
 
+#discover form {
+  position: relative;
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em;
+  background-color: #1F1D2B;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+#discover form .form-group {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+#discover form .form-group input {
+  margin-right: 5px;
+}
+#discover form .form-group label {
+  text-transform: capitalize;
+}
 #discover .buttons .category-form, #discover .buttons .filter-form {
   top: 4em;
   width: 100%;
@@ -780,10 +778,8 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 100%;
   min-height: 200px;
   max-height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   background-position: center;
 }
 @media (max-width: 64em) {
@@ -887,4 +883,4 @@ footer .socials-icons {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}
+}/*# sourceMappingURL=style.css.map */

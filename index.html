@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- TO BUILD -->
-        <div class="popup">
+        <!-- <div class="popup">
             <div class="popup-bg"></div>
             <div class="popup-container">
                 <div class="os-content">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <nav>
             <div class="nav-container flex ai-c jc-sb column relative">
                 <div class="toggle-nav absolute">
@@ -85,7 +85,28 @@
                                 </svg>
                                 Logowanie
                             </div>
-                            <div><span class="btn btn-empty">Rejestracja</span></div>
+                            <div class="popup">
+                                <div class="popup-bg"></div>
+                                <div class="popup-container">
+                                    <div class="os-content">
+                                        <div class="popup-btn flex jc-e">
+                                            <div class="popup-close flex jc-e"><span></span><span></span></div>
+                                        </div>
+                                        <div class="popup-inner">
+                                            <form action="" method="get">
+                                                <div class="row">
+                                                    <div class="column">
+                                                        <input autofocus="autofocus" class="login-input" placeholder="Email or Username" type="text" name="user[login]" id="user_login">
+                                                        <input class="login-input" placeholder="Password" type="password" name="user[password]" id="user_password">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="register"><span class="btn btn-empty">Rejestracja</span></div>
                         </div>
                     </div>
                 </div>
