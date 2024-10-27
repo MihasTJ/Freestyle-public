@@ -370,6 +370,9 @@ header .main-header .signbtn :is(.login, .register) {
 header .main-header .signbtn :is(.login, .register):hover {
   opacity: 1;
 }
+header .popup.login .column input {
+  display: block;
+}
 header .content-header {
   width: calc(100% - var(--nav-width));
   float: right;

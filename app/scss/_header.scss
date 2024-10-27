@@ -12,6 +12,15 @@ header {
             opacity: 1;
         }
     }
+
+    .popup.login{
+        .column{
+            input{
+                display: block;
+            }
+        }
+    }
+    
     .content-header{
         width: calc(100% - var(--nav-width));
         float:right;
