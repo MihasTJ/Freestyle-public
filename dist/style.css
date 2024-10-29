@@ -228,6 +228,11 @@ a {
   width: 80%;
   height: 80%;
 }
+@media (min-width: 64.0625em) {
+  .popup-container {
+    max-width: 1024px;
+  }
+}
 .popup-bg {
   position: fixed;
   top: 0;
@@ -679,7 +684,8 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 50%;
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 64em) {
   #adventure .guide img {
@@ -781,8 +787,10 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 100%;
   min-height: 200px;
   max-height: 200px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   background-position: center;
 }
 @media (max-width: 64em) {
@@ -886,4 +894,4 @@ footer .socials-icons {
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
