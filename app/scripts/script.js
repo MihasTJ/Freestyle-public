@@ -66,9 +66,9 @@ $(document).ready(function() {
 
     // **** toggle buttons form
     function toggleForm(formToShow, formToHide) {
-        $(formToHide).css('display', 'none'); // Ukryj drugi formularz
+        $(formToHide).css('display', 'none');
         $(formToShow).css('display', function(index, value) {
-            return value === 'flex' ? 'none' : 'flex'; // Przełącz widoczność pierwszego formularza
+            return value === 'flex' ? 'none' : 'flex'; 
         });
     }
 
@@ -91,7 +91,7 @@ $(document).ready(function() {
     });
     // toggle buttons form *****
 
-    // Close popup
+    // Close popup ******
     const popup = $('.popup');
     const popupBg = $(".popup .popup-bg");
     const popupClose = $(".popup .popup-close");
@@ -105,9 +105,17 @@ $(document).ready(function() {
     });
 
     function popupCloseFunction() {
-        popup.css("display", "none");
+        popup.addClass("close");
     }
+    // ***** Other popup *****
+    const popupLogin = $('header .login');
 
+    popupLogin.on("click", function() {
+        $(this).siblings(".popup.login").toggleClass('close');
+    });
+
+    //CLOSE POPUP*****************
+    
 
     /*******************************************
      *******************************************
