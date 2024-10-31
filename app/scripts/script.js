@@ -94,6 +94,7 @@ $(document).ready(function() {
     // Close popup ******
     const popup = $('.popup');
     const popupBg = $(".popup .popup-bg");
+    const popupCont = $(".popup .popup-container");
     const popupClose = $(".popup .popup-close");
 
     popupBg.on("click", () => {
