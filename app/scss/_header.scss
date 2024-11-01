@@ -12,17 +12,6 @@ header {
             opacity: 1;
         }
     }
-
-    .popup.login{
-        &.close{
-            display: none;
-        }
-        .column{
-            input{
-                display: block;
-            }
-        }
-    }
     
     .content-header{
         width: calc(100% - var(--nav-width));
