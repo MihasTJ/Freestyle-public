@@ -91,31 +91,28 @@ $(document).ready(function() {
     });
     // toggle buttons form *****
 
-    // Close popup ******
+    // ****** POPUP FUNCITONS ******
     const popup = $('.popup');
     const popupBg = $(".popup .popup-bg");
     const popupCont = $(".popup .popup-container");
-    const popupClose = $(".popup .popup-close");
+    const popupBtnClose = $(".popup .popup-btnClose");
+    const popupActive = $(".popup.active");
 
-    popupBg.on("click", () => {
-        popupCloseFunction();
+    $(popupBtnClose,popupBg).click(function() {
+        $('.popup').removeClass('active');
+    });
+    $('.login').click(function() {
+        $('.popup-login').addClass('active');
     });
 
-    popupClose.on("click", () => {
-        popupCloseFunction();
-    });
-
-    function popupCloseFunction() {
-        popup.addClass("close");
-    }
     // ***** Other popup *****
-    const popupLogin = $('header .login');
+    const popupLogin = $('header .popup-login');
 
     popupLogin.on("click", function() {
         $(this).siblings(".popup.login").toggleClass('close');
     });
 
-    //CLOSE POPUP*****************
+    //****** CLOSE POPUP FUNCTIONS*****************
     
 
     /*******************************************
