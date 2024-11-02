@@ -184,6 +184,16 @@ a{
 
     &.active{
         display: block;
+
+        .popup{
+            &-container{
+                animation: popupCenter ease-in 0.2s forwards;
+            }
+            &-bg{
+                animation: bgShow ease-in 0.2s forwards;
+            }
+        }
+        
     }
     &-container{
         position: fixed;
@@ -195,14 +205,13 @@ a{
         border:1px solid white;
         width: 80%;
         height: 80%;
-        transition: transform 0.3s ease-in;
-        &.open{
-            transform: translate(-50%,-50%);
-        }
 
         @include breakpoint-up(tablet){
             max-width: 1024px;
         }
+    }
+    &-inner input{
+        text-shadow: 0 0 black;
     }
 
     &-bg{
