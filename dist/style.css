@@ -221,6 +221,12 @@ a {
 .popup.active {
   display: block;
 }
+.popup.active .popup-container {
+  animation: popupCenter ease-in 0.2s forwards;
+}
+.popup.active .popup-bg {
+  animation: bgShow ease-in 0.2s forwards;
+}
 .popup-container {
   position: fixed;
   z-index: 9999;
@@ -231,15 +237,14 @@ a {
   border: 1px solid white;
   width: 80%;
   height: 80%;
-  transition: transform 0.3s ease-in;
-}
-.popup-container.open {
-  transform: translate(-50%, -50%);
 }
 @media (min-width: 64.0625em) {
   .popup-container {
     max-width: 1024px;
   }
+}
+.popup-inner input {
+  text-shadow: 0 0 black;
 }
 .popup-bg {
   position: fixed;
@@ -898,5 +903,21 @@ footer .socials-icons {
   }
   80% {
     border-radius: 80% 20% 70% 30%/60% 50% 40% 50%;
+  }
+}
+@keyframes popupCenter {
+  0% {
+    transform: translate(-50%, -48%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes bgShow {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
   }
 }
