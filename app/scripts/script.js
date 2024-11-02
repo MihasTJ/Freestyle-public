@@ -96,21 +96,16 @@ $(document).ready(function() {
     const popupBg = $(".popup .popup-bg");
     const popupCont = $(".popup .popup-container");
     const popupBtnClose = $(".popup .popup-btnClose");
-    const popupActive = $(".popup.active");
 
-    $(popupBtnClose,popupBg).click(function() {
+    $(popupBtnClose).add(popupBg).click(function() {
         $('.popup').removeClass('active');
     });
-    $('.login').click(function() {
-        $('.popup-login').addClass('active');
+
+    // ***** Popup events *****
+    $('header .login').click(function() {
+        $('header .popup-login').addClass('active');
     });
 
-    // ***** Other popup *****
-    const popupLogin = $('header .popup-login');
-
-    popupLogin.on("click", function() {
-        $(this).siblings(".popup.login").toggleClass('close');
-    });
 
     //****** CLOSE POPUP FUNCTIONS*****************
     
