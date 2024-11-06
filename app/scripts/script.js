@@ -92,6 +92,7 @@ $(document).ready(function() {
     // toggle buttons form *****
 
     // ****** POPUP FUNCITONS ******
+    // needed to return (not usable variables)
     const popup = $('.popup');
     const popupBg = $(".popup .popup-bg");
     const popupCont = $(".popup .popup-container");
