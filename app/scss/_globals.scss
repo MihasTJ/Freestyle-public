@@ -118,7 +118,7 @@ a{
     text-decoration: none;
     color:$white;
 }
-.active{
+.link-active{
     position: relative;
     background: $gradient;
     -webkit-background-clip: text;
@@ -187,10 +187,10 @@ a{
 
         .popup{
             &-container{
-                animation: popupCenter ease-in 0.2s forwards;
+                animation: popCenter ease-in 0.2s forwards;
             }
             &-bg{
-                animation: bgShow ease-in 0.2s forwards;
+                animation: popbgShow ease-in 0.2s forwards;
             }
         }
         
@@ -211,7 +211,7 @@ a{
         }
     }
     &-inner input{
-        text-shadow: 0 0 black;
+        color:$black;
     }
 
     &-bg{
