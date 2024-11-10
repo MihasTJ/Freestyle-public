@@ -260,6 +260,7 @@ a{
     text-align: center;
     line-height: 0;
     transition: $transition-1;
+    border:unset;
 
     &-empty{
         background-color: transparent;
@@ -271,6 +272,7 @@ a{
     }
     &-fill{
         background:$gradient;
+        color:$white !important;
     }
 
 }

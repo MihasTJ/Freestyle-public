@@ -291,6 +291,7 @@ a {
   text-align: center;
   line-height: 0;
   transition: 200ms ease-in-out;
+  border: unset;
 }
 .btn-empty {
   background-color: transparent;
@@ -302,6 +303,7 @@ a {
 }
 .btn-fill {
   background: linear-gradient(94.78deg, #9B51E0 0%, #3081ED 100%);
+  color: #ffffff !important;
 }
 
 .txt-gradient {
