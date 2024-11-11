@@ -18,6 +18,9 @@ body{
     }
 }
 /* ------- DEFAULT -------*/
+.block{
+    display: block;
+}
 .flex{
     display: flex;
     &.ai-c{
