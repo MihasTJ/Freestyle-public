@@ -213,8 +213,14 @@ a{
             max-width: 1024px;
         }
     }
-    &-inner input{
-        color:$black;
+    &-inner {
+        input:not([type="submit"]){
+            color:$black;
+            min-width: 200px;
+        }
+        label{
+            font-size:1.1em;
+        }
     }
 
     &-bg{
