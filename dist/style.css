@@ -257,6 +257,17 @@ a {
 .popup-inner a {
   text-decoration: underline;
 }
+.popup-inner .login-input-eye {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4e4e4e;
+  line-height: 2;
+  height: 100%;
+}
 .popup-bg {
   position: fixed;
   top: 0;

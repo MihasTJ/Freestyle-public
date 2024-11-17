@@ -224,6 +224,17 @@ a{
         a{
             text-decoration: underline;
         }
+        .login-input-eye{
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 27px;
+            cursor: pointer;
+            text-align: center;
+            background-color:$gray;
+            line-height: 2;
+            height: 100%;
+        }
     }
 
     &-bg{
