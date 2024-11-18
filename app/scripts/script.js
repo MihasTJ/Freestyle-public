@@ -101,6 +101,12 @@ $(document).ready(function() {
     $(popupBtnClose).add(popupBg).click(function() {
         $('.popup').removeClass('active');
     });
+    // popup eye
+    $(".login-input-eye").on("click", function () {
+        const input = $(".login-input");
+        const type = input.attr("type") === "password" ? "text" : "password";
+        input.attr("type", type);
+    }); 
 
     // ***** Popup events *****
     $('header .login').click(function() {
