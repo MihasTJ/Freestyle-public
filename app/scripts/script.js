@@ -103,7 +103,7 @@ $(document).ready(function() {
     });
     // popup eye
     $(".login-input-eye").on("click", function () {
-        const input = $(".login-input");
+        const input = $("#user_password");
         const type = input.attr("type") === "password" ? "text" : "password";
         input.attr("type", type);
     }); 

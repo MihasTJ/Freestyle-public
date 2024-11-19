@@ -250,6 +250,7 @@ a {
 .popup-inner input:not([type=submit]) {
   color: #000000;
   min-width: 200px;
+  padding: 0.5em;
 }
 .popup-inner label {
   font-size: 1.1em;
