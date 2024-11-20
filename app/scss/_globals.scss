@@ -216,7 +216,7 @@ a{
     &-inner {
         input:not([type="submit"]){
             color:$black;
-            min-width: 200px;
+            width: 230px;
             padding:0.5em;
         }
         label{
@@ -235,6 +235,9 @@ a{
             background-color:$gray;
             line-height: 2;
             height: 100%;
+        }
+        #user_password{
+            padding-right: 27px !important;
         }
     }
 

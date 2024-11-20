@@ -249,7 +249,7 @@ a {
 }
 .popup-inner input:not([type=submit]) {
   color: #000000;
-  min-width: 200px;
+  width: 230px;
   padding: 0.5em;
 }
 .popup-inner label {
@@ -268,6 +268,9 @@ a {
   background-color: #4e4e4e;
   line-height: 2;
   height: 100%;
+}
+.popup-inner #user_password {
+  padding-right: 27px !important;
 }
 .popup-bg {
   position: fixed;
@@ -719,7 +722,8 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 50%;
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 64em) {
   #adventure .guide img {
@@ -821,8 +825,10 @@ nav .nav-container.panel-menu a > i:first-child {
   width: 100%;
   min-height: 200px;
   max-height: 200px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   background-position: center;
 }
 @media (max-width: 64em) {
@@ -942,4 +948,4 @@ footer .socials-icons {
   100% {
     opacity: 0.7;
   }
-}/*# sourceMappingURL=style.css.map */
+}
