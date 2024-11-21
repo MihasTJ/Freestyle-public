@@ -266,7 +266,7 @@ a {
   cursor: pointer;
   text-align: center;
   background-color: #4e4e4e;
-  line-height: 2;
+  line-height: 3;
   height: 100%;
 }
 .popup-inner #user_password {
