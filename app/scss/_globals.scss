@@ -208,10 +208,7 @@ a{
         border:1px solid white;
         width: 80%;
         height: 80%;
-
-        @include breakpoint-up(tablet){
-            max-width: 1024px;
-        }
+        max-width: 600px;
     }
     &-inner {
         input:not([type="submit"]){
