@@ -112,6 +112,9 @@ $(document).ready(function() {
     $('header .login').click(function() {
         $('header .popup-login').addClass('active');
     });
+    $('header .register').click(function() {
+        $('header .popup-register').addClass('active');
+    });
 
 
     //****** CLOSE POPUP FUNCTIONS*****************
